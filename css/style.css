@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* inicio del header */
+
+.titulo{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "titulo__nombre"
+    
+    ;
+}
+
+.titulo__nombre{
+    display: grid;
+    justify-items: center;
+    margin-top: 5px;
+}
+
+
+.barra-enlace{
+    background-color: burlywood;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    
+        
+}
+
+.barra-enlace li{
+    list-style-type: none;
+}
+
+.barra-enlace li a{
+    font-size: small;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+/* fin del header */
+
+
+/* inicio del main index*/
+
+.sec-uno{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "div-uno div-dos"
+    "div-tres div-cuatro"
+    "div-cinco div-seis"
+    ;
+}
+
+
+
+.div-uno{
+    background-color: bisque;
+}
+
+.div-uno h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+
+}
+
+.div-uno p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-size: small;
+    margin-top: 15px;
+}
+
+
+
+.div-dos{
+    background-color: beige;
+}
+.foto-dos{
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.div-tres{
+    background-color: beige;
+}
+.foto-tres{
+    border-radius: 100%;
+    margin: 10px;
+}
+
+
+.div-cuatro{
+    background-color: bisque;
+}
+
+.div-cuatro h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+
+}
+
+.div-cuatro p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-size: small;
+    margin-top: 15px;
+}
+
+
+
+.div-cinco{
+    background-color: bisque;
+}
+
+.div-cinco h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+
+}
+
+.div-cinco p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-size: small;
+    margin-top: 15px;
+}
+
+
+
+.div-seis{
+    background-color: beige;
+}
+.foto-seis{
+    border-radius: 100%;
+    margin: 10px;
+
+}
+
+/* fin del main index*/
+
+/* inicio del main galeria */
+.galery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "tit-parr foto-promo"
+    "tit-guno grupo-uno"
+    "tit-gdos grupo-dos"
+    "tit-gtres grupo-tres"
+    ;
+}
+
+.tit-parr{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+    
+}
+.foto-promo{
+    background-color: beige;
+}
+
+.fopro{
+    border-radius: 50%;
+    margin: 8px 8px;
+
+}
+
+.tit-guno{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+
+.grupo-uno{
+    background-color: beige;
+}
+.fotguno{
+    border-radius: 50%;
+    margin: 8px 8px;
+
+}
+
+.tit-gdos{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+
+.grupo-dos{
+    background-color: beige;
+}
+
+.fotgdos{
+    border-radius: 50%;
+    margin: 8px 8px;
+}
+
+
+
+
+.tit-gtres{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: small;
+}
+.grupo-tres{
+    background-color: beige;
+}
+.fotgtres{
+    border-radius: 50%;
+    margin: 8px 8px;
+}
+
+
+
+
+/* fin del main galeria */
+
+
+/* incio del footer */
+
+
+
+.pie-de-pagina{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "box-logo"
+    "datos-de-contacto"
+    ;
+}
+
+.box-logo{
+    background-color: rgb(245, 245, 220);
+    display: grid;
+    justify-items: center;
+}
+
+.logo{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.datos-de-contacto{
+    background-color: rgb(245, 245, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+
+}
+
+
+/* fin del footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

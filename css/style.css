@@ -52,42 +52,50 @@
 /* inicio del main index*/
 
 .sec-uno{
-    /* background-color: aqua; */
+    background-color: beige;
+    width: 100%;
+    height: 500px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-    "div-uno div-dos"
-    "div-tres div-cuatro"
-    "div-cinco div-seis"
+    "div-uno"
+    "div-dos"
+    "div-tres"
+    "div-cuatro"
+    "div-cinco"
+    "div-seis"
     ;
 }
 
 
 
 .div-uno{
-    background-color: bisque;
+    grid-area: div-uno;
+    display: grid;
+    margin: 10px 10px;
 }
 
 .div-uno h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     font-size: small;
-    margin-top: 10px;
+    margin-top: 5px;
 
 }
 
 .div-uno p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orangered;
+    color: black;
     font-size: small;
-    margin-top: 15px;
+    
 }
 
 
 
 .div-dos{
-    background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 .foto-dos{
     border-radius: 100%;
@@ -95,7 +103,8 @@
 }
 
 .div-tres{
-    background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 .foto-tres{
     border-radius: 100%;
@@ -104,49 +113,56 @@
 
 
 .div-cuatro{
-    background-color: bisque;
+    grid-area: div-cuatro;
+    background-color: beige;
+    display: grid;
 }
 
 .div-cuatro h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     font-size: small;
-    margin-top: 10px;
+    margin: 10px 10px;
 
 }
 
 .div-cuatro p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orangered;
+    color: black;
     font-size: small;
-    margin-top: 15px;
+    margin: 10px 10px;
+
 }
 
 
 
 .div-cinco{
-    background-color: bisque;
+    grid-area: div-cinco;
+    background-color: beige;
+    display: grid;
 }
 
 .div-cinco h2{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: small;
-    margin-top: 10px;
+    margin: 10px 10px;
 
 }
 
 .div-cinco p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orangered;
+    color: black;
     font-size: small;
-    margin-top: 15px;
+    margin: 10px 10px;
 }
 
 
 
 .div-seis{
+    display: flex;
     background-color: beige;
+    justify-content: center;
 }
 .foto-seis{
     border-radius: 100%;
@@ -239,14 +255,68 @@
 
 
 /* fin del main galeria */
+/*inicio del main nosotros*/
+
+.nos-uno{
+    background-color: beige;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-area: 
+    "pri-art"
+    "text-art"
+    "foto-art"
+    "sec-art"
+    "fotos"
+    ;
+}
+
+.pri-art{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 10px;
+
+}
+.text-art{
+    display: flex;
+    margin: 10px 10px;
+}
+.foto-art{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.fart-uno{
+    border-radius: 50%;
+}
+.sec-art{
+    margin: 10px 10px;
+}
+.sec-art h2{
+    display: flex;
+    justify-content: center;
+}
+.fotos{
+
+}
 
 
+
+
+
+
+/*finde del main nosotros*/
 /* incio del footer */
 
 
 
 .pie-de-pagina{
-    background-color: blue;
+    background-color: beige;
+    width: 100%;
+    width: 500px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -257,28 +327,20 @@
 }
 
 .box-logo{
-    background-color: rgb(245, 245, 220);
     display: grid;
-    justify-items: center;
-}
-
-.logo{
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    background-image: url(../assets/img/logo-redimen.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
-
-.datos-de-contacto{
-    background-color: rgb(245, 245, 220);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: small;
+.info-contact{
     display: grid;
-    justify-items: center;
-    align-items: flex-end;
-
+    justify-content: center;
 }
+
 
 
 /* fin del footer */

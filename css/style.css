@@ -301,7 +301,7 @@
 
 /*inicio de tablet*/
 /*inicio del main index*/
-@media (min-width:768px){
+@media (min-width:768px) and (max-width:1023px){
 
 .sec-uno{
     display: grid;
@@ -380,13 +380,121 @@
 }
 
 
-
-
-
-
-
-
 /*fin del main galeria*/
+/*inicio del main nosotros*/
+
+.nosotros{
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "tit-nos tit-nos text-uno text-uno text-uno"
+    "foto-uno foto-uno foto-uno foto-uno foto-uno"
+    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
+    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
+    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
+    ;
+}
+
+.tit-nos{
+    grid-area: tit-nos;
+    background-color: aqua;
+}
+.foto-uno{
+    grid-area: foto-uno;
+    background-color: rgb(0, 255, 26);
+}
+.tit-text{
+    grid-area: tit-text;
+    background-color: rgb(60, 0, 255);
+}
+.text-uno{
+    grid-area: text-uno;
+    background-color: rgb(255, 0, 208);
+}
+.fotos-guno{
+    grid-area: fotos-guno;
+    background-color: rgb(218, 21, 21);
+}
+
+
+/*fin del main nosotros*/
+/*inicio del main novedades*/
+
+.novedades{
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "tit-nov tit-nov tit-nov text-novu text-novu text-novu"
+    "foto-novu foto-novu foto-novu foto-novd foto-novd foto-novd"
+    "foto-novu foto-novu foto-novu foto-novd foto-novd foto-novd"
+    "text-novd text-novd text-novd text-novd text-novd text-novd"
+    ;
+}
+.tit-nov{
+    grid-area: tit-nov;
+    background-color: aqua
+}
+.text-novu{
+    grid-area: text-novu;
+    background-color: rgb(0, 26, 255)
+}
+.foto-novu{
+    grid-area: foto-novu;
+    background-color: rgb(255, 149, 0)
+}
+.text-novd{
+    grid-area: text-novd;
+    background-color: rgb(255, 0, 255)
+}
+.foto-novd{
+    grid-area: foto-novd;
+    background-color: rgb(255, 64, 0)
+}
+
+
+/*fin del main novedades*/
+/*inicio del main contacto*/
+
+.contacto{
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "tit-con tit-con tit-con tit-con tit-con"
+    "formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario"
+    "formulario formulario formulario formulario formulario"
+
+
+    ;
+}
+.tit-con{
+    grid-area: tit-con;
+    background-color: aqua;
+}
+.formulario{
+    grid-area: formulario;
+    background-color: blueviolet;
+}
+
+
+/*fin del main contacto*/
+}
+/*fin de tablet*/
+
+/*inicio desktop*/
+
+@media (min-width:1024px){
+    
+
+
+
 
 
 
@@ -398,8 +506,7 @@
 
 
 }
-/*fin de tablet*/
-
+/*find desktop*/
 
 
 

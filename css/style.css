@@ -47,16 +47,12 @@
 }
 
 /* fin del header */
-
-
 /* inicio del main index*/
 
 .sec-uno{
-    background-color: beige;
-    width: 100%;
-    height: 500px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    height: 400px;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
     "div-uno"
@@ -67,279 +63,74 @@
     "div-seis"
     ;
 }
-
-
-
 .div-uno{
     grid-area: div-uno;
-    display: grid;
-    margin: 10px 10px;
-}
-
-.div-uno h2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    font-size: small;
-    margin-top: 5px;
-
-}
-
-.div-uno p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    font-size: small;
+    background-color: beige;
     
 }
-
-
-
+.div-uno p{
+    text-align: center;
+}
 .div-dos{
-    display: flex;
-    justify-content: center;
+    grid-area: div-dos;
+    background-image: url(../assets/img/redy.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 50%;
 }
-.foto-dos{
-    border-radius: 100%;
-    margin: 10px;
-}
-
 .div-tres{
-    display: flex;
-    justify-content: center;
+    grid-area: div-tres;
+    background-color: burlywood;
 }
-.foto-tres{
-    border-radius: 100%;
-    margin: 10px;
-}
-
-
 .div-cuatro{
     grid-area: div-cuatro;
     background-color: beige;
-    display: grid;
 }
-
-.div-cuatro h2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    font-size: small;
-    margin: 10px 10px;
-
-}
-
-.div-cuatro p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    font-size: small;
-    margin: 10px 10px;
-
-}
-
-
-
 .div-cinco{
     grid-area: div-cinco;
-    background-color: beige;
-    display: grid;
+    background-color: burlywood;
 }
-
-.div-cinco h2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: small;
-    margin: 10px 10px;
-
-}
-
-.div-cinco p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-    font-size: small;
-    margin: 10px 10px;
-}
-
-
-
 .div-seis{
-    display: flex;
+    grid-area: div-seis;
     background-color: beige;
-    justify-content: center;
 }
-.foto-seis{
-    border-radius: 100%;
-    margin: 10px;
 
-}
 
 /* fin del main index*/
 
 /* inicio del main galeria */
-.galery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "tit-parr foto-promo"
-    "tit-guno grupo-uno"
-    "tit-gdos grupo-dos"
-    "tit-gtres grupo-tres"
-    ;
-}
-
-.tit-parr{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: small;
-    
-}
-.foto-promo{
-    background-color: beige;
-}
-
-.fopro{
-    border-radius: 50%;
-    margin: 8px 8px;
-
-}
-
-.tit-guno{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: small;
-}
-
-.grupo-uno{
-    background-color: beige;
-}
-.fotguno{
-    border-radius: 50%;
-    margin: 8px 8px;
-
-}
-
-.tit-gdos{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: small;
-}
-
-.grupo-dos{
-    background-color: beige;
-}
-
-.fotgdos{
-    border-radius: 50%;
-    margin: 8px 8px;
-}
-
-
-
-
-.tit-gtres{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: small;
-}
-.grupo-tres{
-    background-color: beige;
-}
-.fotgtres{
-    border-radius: 50%;
-    margin: 8px 8px;
-}
-
-
 
 
 /* fin del main galeria */
 /*inicio del main nosotros*/
 
-.nos-uno{
-    background-color: beige;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-area: 
-    "pri-art"
-    "text-art"
-    "foto-art"
-    "sec-art"
-    "fotos"
-    ;
-}
-
-.pri-art{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 10px 10px;
-
-}
-.text-art{
-    display: flex;
-    margin: 10px 10px;
-}
-.foto-art{
-    display: flex;
-    justify-content: center;
-    margin: 10px 10px;
-}
-.fart-uno{
-    border-radius: 50%;
-}
-.sec-art{
-    margin: 10px 10px;
-}
-.sec-art h2{
-    display: flex;
-    justify-content: center;
-}
-.fotos{
-
-}
-
-
-
-
-
 
 /*finde del main nosotros*/
 /* incio del footer */
 
-
-
-.pie-de-pagina{
-    background-color: beige;
-    width: 100%;
-    width: 500px;
+.pie-pag{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "box-logo"
-    "datos-de-contacto"
+    "info-contacto"
+    "image"
     ;
 }
 
-.box-logo{
-    display: grid;
-    justify-content: center;
+.info-contacto{
+    grid-area: info-contacto;
+    background-color: rgb(240, 161, 58);
+}
+
+.image{
+    grid-area: image;
     background-image: url(../assets/img/logo-redimen.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    background-size: contain;
+    background-repeat: repeat;
 }
 
-.info-contact{
-    display: grid;
-    justify-content: center;
-}
 
 
 

@@ -492,13 +492,173 @@
 
 @media (min-width:1024px){
     
+    .sec-uno{
+        display: grid;
+        height: 600px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "div-uno div-uno div-uno div-uno div-uno div-uno" 
+        "div-dos div-dos div-dos div-tres div-tres div-tres" 
+        "div-cuatro div-cuatro div-cuatro div-cinco div-cinco div-cinco" 
+        "div-cuatro div-cuatro div-cuatro div-cinco div-cinco div-cinco" 
+        "div-seis div-seis div-seis div-cinco div-cinco div-cinco"
+        "div-seis div-seis div-seis div-cinco div-cinco div-cinco" 
+        ;
+    }
+    .div-uno{
+        grid-area: div-uno;
+        background-color: aqua
+    }
+    .div-dos{
+        grid-area: div-dos;
+        background-color: rgb(0, 255, 55)
+    }
+    .div-tres{
+        grid-area: div-tres;
+        background-color: rgb(76, 0, 255)
+    }
+    .div-cuatro{
+        grid-area: div-cuatro;
+        background-color: rgb(255, 81, 0)
+    }
+    .div-cinco{
+        grid-area: div-cinco;
+        background-color: rgb(255, 0, 157)
+    }
+    .div-seis{
+        grid-area: div-seis;
+        background-color: rgb(255, 174, 0)
+    }
+
+/*fin de main index*/
+/*inicio de main galeria */
+
+    .galery{
+        display: grid;
+        height: 500px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "tit-parr tit-parr tit-parr foto-promo foto-promo foto-promo"
+        "tit-parr tit-parr tit-parr foto-promo foto-promo foto-promo"
+        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
+        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
+        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
+        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
+        "tit-gtres tit-gtres grupo-tres grupo-tres grupo-tres grupo-tres"
+        "tit-gtres tit-gtres grupo-tres grupo-tres grupo-tres grupo-tres"
+        ;
+    }
+    .tit-parr{
+        grid-area: tit-parr;
+        background-color: aqua;
+    }
+    .foto-promo{
+        grid-area: foto-promo;
+        background-color: rgb(0, 255, 0);
+    }
+    .tit-guno{
+        grid-area: tit-guno;
+        background-color: rgb(255, 0, 0);
+    }
+    .grupo-uno{
+        grid-area: grupo-uno;
+        background-color: rgb(255, 251, 0);
+    }
+    .tit-gdos{
+        grid-area: tit-gdos;
+        background-color: rgb(4, 0, 255);
+    }
+    .grupo-dos{
+        grid-area: grupo-dos;
+        background-color: rgb(255, 0, 255);
+    }
+    .tit-gtres{
+        grid-area: tit-gtres;
+        background-color: rgb(255, 153, 0);
+    }
+    .grupo-tres{
+        grid-area: grupo-tres;
+        background-color: rgb(0, 255, 179);
+    }
+
+/*fin de main galeria */
+/*inicio del main nosotros*/
+    .nosotros{
+        display: grid;
+        height: 400px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "tit-nos tit-nos foto-uno foto-uno foto-uno foto-uno"
+        "tit-nos tit-nos foto-uno foto-uno foto-uno foto-uno"
+        "tit-text tit-text fotos-guno fotos-guno fotos-guno fotos-guno"
+        "tit-text tit-text fotos-guno fotos-guno fotos-guno fotos-guno"
+        "text-uno text-uno fotos-guno fotos-guno fotos-guno fotos-guno"
+        "text-uno text-uno fotos-guno fotos-guno fotos-guno fotos-guno"
+        ;
+    }
+    .tit-nos{
+        grid-area: tit-nos;
+        background-color: aqua;
+    }
+    .foto-uno{
+        grid-area: foto-uno;
+        background-color: red;
+    }
+    .tit-text{
+        grid-area: tit-text;
+        background-color: rgb(168, 168, 28);
+    }
+    .text-uno{
+        grid-area: text-uno;
+        background-color: yellow;
+    }
+    .fotos-guno{
+        grid-area: fotos-guno;
+        background-color: rgb(207, 241, 138);
+    }
+
+/*fin de main nosotros*/
+/*inicio del main novedades*/
+    .novedades{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
+        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
+        "foto-novu foto-novu foto-novu text-novd text-novd text-novd"
+        "foto-novu foto-novu foto-novu text-novd text-novd text-novd"
+        "foto-novd foto-novd foto-novd foto-novd foto-novd foto-novd"
+        "foto-novd foto-novd foto-novd foto-novd foto-novd foto-novd"
+        ; 
+    }
+    .tit-nov{
+        grid-area: tit-nov;
+        background-color: aqua;
+    }
+    .text-novu{
+        grid-area: text-novu;
+        background-color: rgb(68, 0, 255);
+    }
+    .foto-novu{
+        grid-area: foto-novu;
+        background-color: rgb(255, 238, 0);
+    }
+    .text-novd{
+        grid-area: text-novd;
+        background-color: rgb(0, 255, 64);
+    }
+    .foto-novd{
+        grid-area: foto-novd;
+        background-color: rgb(255, 0, 55);
+    }
 
 
-
-
-
-
-
+/*fin del main novedades*/
+/*inicio del main contacto*/
 
 
 
@@ -506,7 +666,7 @@
 
 
 }
-/*find desktop*/
+/*fin desktop*/
 
 
 

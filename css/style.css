@@ -659,8 +659,29 @@
 
 /*fin del main novedades*/
 /*inicio del main contacto*/
-
-
+    .contacto{
+        display: grid;
+        height: 500px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "tit-con tit-con tit-con tit-con tit-con tit-con"
+        "formulario formulario formulario formulario formulario formulario"
+        "formulario formulario formulario formulario formulario formulario"
+        "formulario formulario formulario formulario formulario formulario"
+        "formulario formulario formulario formulario formulario formulario"
+        "formulario formulario formulario formulario formulario formulario"
+        ;
+    }
+    .tit-con{
+        grid-area: tit-con;
+        background-color: beige;
+    }
+    .formulario{
+        grid-area: formulario;
+        background-color: rgb(36, 207, 36);
+    }
+/*fin del main contacto*/
 
 
 

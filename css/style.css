@@ -82,10 +82,23 @@
 .div-tres{
     grid-area: div-tres;
     background-color: burlywood;
+    background-image: url(../assets/img/redy.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 .div-cuatro{
     grid-area: div-cuatro;
     background-color: beige;
+
+}
+.div-cuatro h3{
+    color: cornflowerblue;
+}
+
+.div-cuatro p{
+    color: green;
 }
 .div-cinco{
     grid-area: div-cinco;
@@ -286,11 +299,106 @@
 /* fin del footer */
 
 
+/*inicio de tablet*/
+/*inicio del main index*/
+@media (min-width:768px){
+
+.sec-uno{
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "div-uno div-dos div-tres"
+    "div-cuatro div-cinco div-seis"
+    "div-cuatro div-cinco div-seis"
+    ;
+}
+
+.div-uno{
+    grid-area: div-uno;
+    background-color: blue;
+}
+.div-dos{
+    grid-area: div-dos;
+}
+.div-tres{
+    grid-area: div-tres;
+}
+.div-cuatro{
+    grid-area: div-cuatro;
+}
+.div-cinco{
+    grid-area: div-cinco;
+}
+.div-seis{
+    grid-area: div-seis;
+}
+/*fin del main index*/
+/*inicio del main galeria*/
+
+.galery{
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "tit-parr tit-parr foto-promo foto-promo"
+    "tit-guno tit-guno grupo-uno grupo-uno"
+    "tit-gdos tit-gdos grupo-dos grupo-dos"
+    "tit-gtres tit-gtres grupo-tres grupo-tres"
+
+    
+    
+    
+    ;
+}
+
+.tit-parr{
+    grid-area: tit-parr;
+}
+.foto-promo{
+    grid-area: foto-promo;
+}
+.tit-guno{
+    grid-area: tit-guno;
+}
+.grupo-uno{
+    grid-area: grupo-uno;
+}
+.tit-gdos{
+    grid-area: tit-gdos;
+}
+.grupo-dos{
+    grid-area: grupo-dos;
+}
+.tit-gtres{
+    grid-area: tit-gtres;
+}
+.grupo-tres{
+    grid-area: grupo-tres;   
+}
 
 
 
 
 
+
+
+
+/*fin del main galeria*/
+
+
+
+
+
+
+
+
+
+
+}
+/*fin de tablet*/
 
 
 

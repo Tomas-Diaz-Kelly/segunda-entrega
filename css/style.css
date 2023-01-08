@@ -154,17 +154,91 @@
 
 
 
-
-
-
-
-
-
 /* fin del main galeria */
 /*inicio del main nosotros*/
 
+.nosotros{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "tit-nos"
+    "foto-uno"
+    "tit-text"
+    "text-uno"
+    "fotos-guno"
+    ;
+}
+
+
+.tit-nos{
+    grid-area: tit-nos;
+    background-color: aqua;
+}
+.foto-uno{
+    grid-area: foto-uno;
+    background-color: rgb(0, 255, 85);
+}
+.tit-text{
+    grid-area: tit-text;
+    background-color: rgb(17, 0, 255);
+}
+.text-uno{
+    grid-area: text-uno;
+    background-color: rgb(255, 0, 30);
+}
+.fotos-guno{
+    grid-area: fotos-guno;
+    background-color: rgb(255, 170, 0);
+}
+
+
 
 /*finde del main nosotros*/
+/*inicio del main novedades */
+.novedades{
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "tit-nov"
+    "text-novu"
+    "foto-novu"
+    "text-novd"
+    "foto-novd"
+    ;
+}
+
+.tit-nov{
+    grid-area: tit-nov;
+    background-color: rgb(255, 0, 242)
+}
+.text-novu{
+    grid-area: text-novu;
+    background-color: rgb(255, 77, 0)
+}
+.foto-novu{
+    grid-area: foto-novu;
+    background-color: rgb(255, 238, 0)
+}
+.text-novd{
+    grid-area: text-novd;
+    background-color: rgb(19, 59, 170)
+}
+.foto-novd{
+    grid-area: foto-novd;
+    background-color: rgb(0, 215, 43)
+}
+
+
+
+
+
+
+
+/*fin del main novedades*/
 /* incio del footer */
 
 .pie-pag{

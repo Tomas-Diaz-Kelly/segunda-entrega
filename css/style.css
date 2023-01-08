@@ -233,12 +233,29 @@
 }
 
 
-
-
-
-
-
 /*fin del main novedades*/
+/*inicio del main contacto*/
+
+.contacto{
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "tit-con"
+    "formulario"
+    ;
+}
+.tit-con{
+    grid-area: tit-con;
+    background-color: rgb(246, 255, 196);
+}
+.formulario{
+    grid-area: formulario;
+    background-color: rgb(58, 206, 107);
+}
+
+/*fin del main contacto*/
 /* incio del footer */
 
 .pie-pag{

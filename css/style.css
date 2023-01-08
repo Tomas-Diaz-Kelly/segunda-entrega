@@ -100,6 +100,64 @@
 /* fin del main index*/
 
 /* inicio del main galeria */
+.galery{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    "tit-parr"
+    "foto-promo"
+    "tit-guno"
+    "grupo-uno"
+    "tit-gdos"
+    "grupo-dos"
+    "tit-gtres"
+    "grupo-tres"
+    ;
+
+
+}
+
+.tit-parr{
+    grid-area: tit-parr;
+    background-color: aqua;
+}
+.foto-promo{
+    grid-area: foto-promo;
+    background-color: red;
+}
+.tit-guno{
+    grid-area: tit-guno;
+    background-color: rgb(0, 255, 55);
+}
+.grupo-uno{
+    grid-area: grupo-uno;
+    background-color: rgb(238, 255, 0);
+}
+.tit-gdos{
+    grid-area: tit-gdos;
+    background-color: rgb(25, 0, 255);
+}
+.grupo-dos{
+    grid-area: grupo-dos;
+    background-color: rgb(234, 0, 255);    
+}
+.tit-gtres{
+    grid-area: tit-gtres;
+    background-color: rgb(255, 0, 76);
+}
+.grupo-tres{
+    grid-area: grupo-tres;
+    background-color: rgb(255, 166, 0);
+}
+
+
+
+
+
+
+
 
 
 /* fin del main galeria */

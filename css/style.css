@@ -57,10 +57,10 @@
     grid-template-areas: 
     "div-uno"
     "div-dos"
-    "div-tres"
+    "div-dos"
     "div-cuatro"
-    "div-cinco"
-    "div-seis"
+    "div-tres"
+    "div-tres"
     ;
 }
 .div-uno{
@@ -68,8 +68,11 @@
     background-color: beige;
     
 }
-.div-uno p{
+.div-uno h3{
     text-align: center;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
 }
 .div-dos{
     grid-area: div-dos;
@@ -78,6 +81,7 @@
     background-size: contain;
     background-repeat: repeat;
     border-radius: 50%;
+    margin: 10px 10px;
 }
 .div-tres{
     grid-area: div-tres;
@@ -87,6 +91,10 @@
     background-repeat: repeat;
     border-top-right-radius: 25%;
     border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    margin: 8px 8px;
+
 }
 .div-cuatro{
     grid-area: div-cuatro;
@@ -94,20 +102,19 @@
 
 }
 .div-cuatro h3{
-    color: cornflowerblue;
+    color: goldenrod;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .div-cuatro p{
     color: green;
+    text-align: center;
+    margin: 10px 10px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.div-cinco{
-    grid-area: div-cinco;
-    background-color: burlywood;
-}
-.div-seis{
-    grid-area: div-seis;
-    background-color: beige;
-}
+
 
 
 /* fin del main index*/
@@ -120,50 +127,64 @@
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
     "tit-parr"
-    "foto-promo"
+    "tit-parr"
     "tit-guno"
+    "grupo-uno"
     "grupo-uno"
     "tit-gdos"
     "grupo-dos"
-    "tit-gtres"
-    "grupo-tres"
+    "grupo-dos"
     ;
-
-
 }
 
 .tit-parr{
     grid-area: tit-parr;
-    background-color: aqua;
+    background-color: beige;
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
 }
-.foto-promo{
-    grid-area: foto-promo;
-    background-color: red;
+.tit-parr h3{
+    margin-top: 20px;
 }
 .tit-guno{
     grid-area: tit-guno;
-    background-color: rgb(0, 255, 55);
+    background-color: beige;
+    text-align: center;
+    font-size: large;
+    color: goldenrod;
+    
 }
 .grupo-uno{
     grid-area: grupo-uno;
-    background-color: rgb(238, 255, 0);
+    background-color: beige;
+    background-image: url(../assets/img/redy.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 10px;
 }
 .tit-gdos{
     grid-area: tit-gdos;
-    background-color: rgb(25, 0, 255);
+    background-color: beige;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
 }
 .grupo-dos{
     grid-area: grupo-dos;
-    background-color: rgb(234, 0, 255);    
+    background-color: beige;
+    background-image: url(../assets/img/redy.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 50%;
+    margin: 10px 10px;  
 }
-.tit-gtres{
-    grid-area: tit-gtres;
-    background-color: rgb(255, 0, 76);
-}
-.grupo-tres{
-    grid-area: grupo-tres;
-    background-color: rgb(255, 166, 0);
-}
+
+
 
 
 
@@ -301,7 +322,7 @@
 
 /*inicio de tablet*/
 /*inicio del main index*/
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:768px) and (max-width:1024px){
 
 .sec-uno{
     display: grid;
@@ -309,15 +330,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "div-uno div-dos div-tres"
-    "div-cuatro div-cinco div-seis"
-    "div-cuatro div-cinco div-seis"
+    "div-uno div-cuatro div-cuatro"
+    "div-dos div-tres div-tres"
+    "div-dos div-tres div-tres"
     ;
 }
 
 .div-uno{
     grid-area: div-uno;
-    background-color: blue;
+    
 }
 .div-dos{
     grid-area: div-dos;
@@ -328,12 +349,7 @@
 .div-cuatro{
     grid-area: div-cuatro;
 }
-.div-cinco{
-    grid-area: div-cinco;
-}
-.div-seis{
-    grid-area: div-seis;
-}
+
 /*fin del main index*/
 /*inicio del main galeria*/
 
@@ -341,12 +357,13 @@
     display: grid;
     height: 500px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-    "tit-parr tit-parr foto-promo foto-promo"
-    "tit-guno tit-guno grupo-uno grupo-uno"
-    "tit-gdos tit-gdos grupo-dos grupo-dos"
-    "tit-gtres tit-gtres grupo-tres grupo-tres"
+    "tit-parr tit-parr tit-parr tit-parr"
+    "tit-guno grupo-uno grupo-uno grupo-uno"
+    "tit-guno grupo-uno grupo-uno grupo-uno"
+    "tit-gdos grupo-dos grupo-dos grupo-dos"
+    "tit-gdos grupo-dos grupo-dos grupo-dos"
 
     
     
@@ -372,12 +389,7 @@
 .grupo-dos{
     grid-area: grupo-dos;
 }
-.tit-gtres{
-    grid-area: tit-gtres;
-}
-.grupo-tres{
-    grid-area: grupo-tres;   
-}
+
 
 
 /*fin del main galeria*/
@@ -489,7 +501,7 @@
 /*fin de tablet*/
 
 /*inicio desktop*/
-
+/*inicio del main index*/
 @media (min-width:1024px){
     
     .sec-uno{
@@ -499,37 +511,30 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
         "div-uno div-uno div-uno div-uno div-uno div-uno" 
-        "div-dos div-dos div-dos div-tres div-tres div-tres" 
-        "div-cuatro div-cuatro div-cuatro div-cinco div-cinco div-cinco" 
-        "div-cuatro div-cuatro div-cuatro div-cinco div-cinco div-cinco" 
-        "div-seis div-seis div-seis div-cinco div-cinco div-cinco"
-        "div-seis div-seis div-seis div-cinco div-cinco div-cinco" 
+        "div-uno div-uno div-uno div-uno div-uno div-uno" 
+        "div-cuatro div-cuatro div-cuatro div-dos div-dos div-dos" 
+        "div-cuatro div-cuatro div-cuatro div-dos div-dos div-dos" 
+        "div-cuatro div-cuatro div-cuatro div-tres div-tres div-tres"
+        "div-cuatro div-cuatro div-cuatro div-tres div-tres div-tres" 
         ;
     }
     .div-uno{
         grid-area: div-uno;
-        background-color: aqua
+        
     }
     .div-dos{
         grid-area: div-dos;
-        background-color: rgb(0, 255, 55)
+        
     }
     .div-tres{
         grid-area: div-tres;
-        background-color: rgb(76, 0, 255)
+        
     }
     .div-cuatro{
         grid-area: div-cuatro;
-        background-color: rgb(255, 81, 0)
+        
     }
-    .div-cinco{
-        grid-area: div-cinco;
-        background-color: rgb(255, 0, 157)
-    }
-    .div-seis{
-        grid-area: div-seis;
-        background-color: rgb(255, 174, 0)
-    }
+    
 
 /*fin de main index*/
 /*inicio de main galeria */
@@ -540,48 +545,41 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas: 
-        "tit-parr tit-parr tit-parr foto-promo foto-promo foto-promo"
-        "tit-parr tit-parr tit-parr foto-promo foto-promo foto-promo"
+        "tit-parr tit-parr tit-parr tit-parr tit-parr tit-parr"
+        "tit-parr tit-parr tit-parr tit-parr tit-parr tit-parr"
+        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
         "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
         "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
         "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
         "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
-        "tit-gtres tit-gtres grupo-tres grupo-tres grupo-tres grupo-tres"
-        "tit-gtres tit-gtres grupo-tres grupo-tres grupo-tres grupo-tres"
+        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
         ;
     }
     .tit-parr{
         grid-area: tit-parr;
-        background-color: aqua;
+        
     }
     .foto-promo{
         grid-area: foto-promo;
-        background-color: rgb(0, 255, 0);
+        
     }
     .tit-guno{
         grid-area: tit-guno;
-        background-color: rgb(255, 0, 0);
+        
     }
     .grupo-uno{
         grid-area: grupo-uno;
-        background-color: rgb(255, 251, 0);
+        
     }
     .tit-gdos{
         grid-area: tit-gdos;
-        background-color: rgb(4, 0, 255);
+        
     }
     .grupo-dos{
         grid-area: grupo-dos;
-        background-color: rgb(255, 0, 255);
+        
     }
-    .tit-gtres{
-        grid-area: tit-gtres;
-        background-color: rgb(255, 153, 0);
-    }
-    .grupo-tres{
-        grid-area: grupo-tres;
-        background-color: rgb(0, 255, 179);
-    }
+    
 
 /*fin de main galeria */
 /*inicio del main nosotros*/

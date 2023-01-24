@@ -1,0 +1,47 @@
+
+    .galery{
+    @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(5, 1fr));
+    grid-template-areas: 
+    "tit"
+    "t-guno"
+    "g-u"
+    "tx-gu"
+    "g-d"
+    ;
+    .tit-parr{
+            grid-area: tit;
+            background-color: $bg-principal;
+            h3{
+                font-family: $typo-principal;
+                font-size: 30px;
+            }
+        }
+        .tit-guno{
+            grid-area: t-guno;
+            h3{
+                font-family: $typo-principal;
+            }
+        }
+        .grupo-uno{
+            grid-area: g-u;
+            .img-guno{
+                border-radius: 50%;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+        .text-guno{
+            grid-area: tx-gu;
+            p{
+                font-family: $typo-secundario;
+            }
+        }
+        .grupo-dos{
+            grid-area: g-d;
+            .img-gdos{
+                border-radius: 50%;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+    }

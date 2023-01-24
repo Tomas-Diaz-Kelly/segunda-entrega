@@ -1,0 +1,47 @@
+main{
+    background-color: $bg-principal;
+    .sec-uno{
+@include codigo-main (flex-start,flex-start,center,15px,repeat(1, 1fr),repeat(4, 1fr));
+grid-template-areas: 
+"div-uno"
+"div-dos"
+"div-tres"
+"div-cuatro"
+;
+        .div-uno{
+            grid-area: div-uno;
+            justify-content: flex-start;
+            h3{
+                background-color: $bg-secundario;
+            }
+        }
+        .div-dos{
+            grid-area: div-dos;
+            background-color: $bg-principal;
+            margin-bottom: 12px;
+            .fotito{
+                border-radius: 50%;
+                
+            }
+        }
+        .div-tres{
+            grid-area: div-tres;
+            background-color: $bg-principal;
+            
+            .foti{
+                border-radius: 50%;
+            }
+        }
+        .div-cuatro{
+            grid-area: div-cuatro;
+            background-color: $bg-principal;
+            h3{
+                font-family: $typo-principal;
+                
+            }
+            p{
+                font-family: $typo-secundario;
+            }
+        }
+    }
+}

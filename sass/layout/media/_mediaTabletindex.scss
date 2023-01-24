@@ -1,0 +1,105 @@
+@media (min-width:768px) and (max-width:1023px){
+    
+    header{
+        background-color: $bg-secundario;
+        height: 150px;
+        .titulo{    
+                @include codigo-header (start, start,start,30px, repeat(1, 1fr), repeat(1, 1fr));
+                background-color: $bg-principal;
+                .titulo-nombre{
+                    margin-left: 35px;
+                    font-family: $typo-secundario;
+                }
+            }
+    
+            .barra-enlace{
+                background-color: $bg-secundario;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                li{
+                    list-style: none;            
+                    a{
+                        text-decoration: none;
+                        color:  black;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    
+    main{
+        .sec-uno{
+                @include main-tablet (repeat(3, 1fr), repeat(4, 1fr));
+                @include mainTablet-positions(center,center,center);
+                grid-template-areas: 
+                "div-uno div-uno div-dos"
+                "div-cuatro div-cuatro div-dos"
+                "div-cuatro div-cuatro div-tres"
+                "div-cuatro div-cuatro div-tres"
+                ;
+                background-color: $bg-principal;
+                height: 700px;
+                
+                .div-uno{
+                    grid-area: div-uno;
+                    h3{
+                        background-color: $bg-principal;
+                    }
+                }
+                .div-dos{
+                    grid-area: div-dos;
+                    background-color: $bg-principal;
+                    margin-bottom: 12px;
+                    .fotito{
+                        border-radius: 50%;
+                        
+                    }
+                }
+                .div-tres{
+                    grid-area: div-tres;
+                    background-color: $bg-principal;
+                    
+                    .foti{
+                        border-radius: 50%;
+                    }
+                }
+                .div-cuatro{
+                    grid-area: div-cuatro;
+                    background-color: $bg-principal;
+                    h3{
+                        font-family: $typo-principal;
+                        
+                    }
+                    p{
+                        font-family: $typo-secundario;
+                    }
+                }
+            }
+        }
+
+        footer{
+            @include footer-tablet (repeat(3, 1fr), (repeat(3, 1fr)));
+            grid-template-areas: 
+            ". . ."
+            "info-contacto info-contacto info-contacto"
+            "image image image"
+            ;
+                .info-contacto{
+                    grid-area: info-contacto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    p{
+                        font-family: $typo-secundario;
+                    }
+                }
+                .image{
+                    grid-area: image;
+                    background-color: $bg-secundario;
+                    .imagee{
+                        border-radius: 50%; 
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }

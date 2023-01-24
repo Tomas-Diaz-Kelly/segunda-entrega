@@ -1,0 +1,65 @@
+@mixin codigo-header ($justify, $align,$textalign,$size, $col, $row){
+    display: grid;
+    height: auto;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $textalign;
+    font-size: $size;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+@mixin codigo-main ($justify, $align,$textalign,$size, $col, $row){
+    display: grid;
+    height: 550px;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $textalign;
+    font-size: $size;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+@mixin codigo-footer($justify, $align,$textalign,$size, $col, $row){
+    display: grid;
+    height: auto;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $textalign;
+    font-size: $size;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+@mixin main-tablet ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+@mixin mainTablet-positions($justify, $align,$textalign){
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $textalign;
+}
+
+
+@mixin footer-tablet ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+
+@mixin header-desktop ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+
+@mixin main-desktop ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}

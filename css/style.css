@@ -1,699 +1,408 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* inicio del header */
-
-.titulo{
-    background-color: beige;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: 
-    "titulo__nombre"
-    
-    ;
-}
-
-.titulo__nombre{
-    display: grid;
-    justify-items: center;
-    margin-top: 5px;
-}
-
-
-.barra-enlace{
+/*Tipografias*/
+/*Colores BACKGROUND-COLOR*/
+/*Colores letras*/
+header {
+  display: grid;
+  height: auto;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-size: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: beige; }
+  header .titulo {
+    background-color: burlywood; }
+  header .barra-enlace {
     background-color: burlywood;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    
-        
-}
+    justify-content: space-evenly; }
+    header .barra-enlace li {
+      list-style: none; }
+      header .barra-enlace li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px; }
 
-.barra-enlace li{
-    list-style-type: none;
-}
-
-.barra-enlace li a{
-    font-size: small;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-}
-
-/* fin del header */
-/* inicio del main index*/
-
-.sec-uno{
+main {
+  background-color: beige; }
+  main .sec-uno {
     display: grid;
-    height: 400px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-    "div-uno"
-    "div-dos"
-    "div-dos"
-    "div-cuatro"
-    "div-tres"
-    "div-tres"
-    ;
-}
-.div-uno{
-    grid-area: div-uno;
-    background-color: beige;
-    
-}
-.div-uno h3{
+    height: 550px;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: goldenrod;
-}
-.div-dos{
-    grid-area: div-dos;
-    background-image: url(../assets/img/redy.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 50%;
-    margin: 10px 10px;
-}
-.div-tres{
-    grid-area: div-tres;
+    font-size: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "div-uno" "div-dos" "div-tres" "div-cuatro"; }
+    main .sec-uno .div-uno {
+      grid-area: div-uno;
+      justify-content: flex-start; }
+      main .sec-uno .div-uno h3 {
+        background-color: burlywood; }
+    main .sec-uno .div-dos {
+      grid-area: div-dos;
+      background-color: beige;
+      margin-bottom: 12px; }
+      main .sec-uno .div-dos .fotito {
+        border-radius: 50%; }
+    main .sec-uno .div-tres {
+      grid-area: div-tres;
+      background-color: beige; }
+      main .sec-uno .div-tres .foti {
+        border-radius: 50%; }
+    main .sec-uno .div-cuatro {
+      grid-area: div-cuatro;
+      background-color: beige; }
+      main .sec-uno .div-cuatro h3 {
+        font-family: "Roboto Condensed", sans-serif; }
+      main .sec-uno .div-cuatro p {
+        font-family: "Playfair Display", serif; }
+
+footer {
+  display: grid;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: burlywood; }
+  footer .info-contacto {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    footer .info-contacto p {
+      font-family: "Playfair Display", serif; }
+  footer .image {
+    background-color: burlywood; }
+    footer .image .imagee {
+      border-radius: 50%;
+      margin-top: 10px; }
+
+.galery {
+  display: grid;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "tit" "t-guno" "g-u" "tx-gu" "g-d"; }
+  .galery .tit-parr {
+    grid-area: tit;
+    background-color: beige; }
+    .galery .tit-parr h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 30px; }
+  .galery .tit-guno {
+    grid-area: t-guno; }
+    .galery .tit-guno h3 {
+      font-family: "Roboto Condensed", sans-serif; }
+  .galery .grupo-uno {
+    grid-area: g-u; }
+    .galery .grupo-uno .img-guno {
+      border-radius: 50%;
+      margin-top: 12px;
+      margin-bottom: 12px; }
+  .galery .text-guno {
+    grid-area: tx-gu; }
+    .galery .text-guno p {
+      font-family: "Playfair Display", serif; }
+  .galery .grupo-dos {
+    grid-area: g-d; }
+    .galery .grupo-dos .img-gdos {
+      border-radius: 50%;
+      margin-top: 12px;
+      margin-bottom: 12px; }
+
+.mainNosotros {
+  display: grid;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: burlywood; }
+  .mainNosotros .nosotros {
+    display: grid;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: burlywood; }
+    .mainNosotros .nosotros .tit-nos {
+      background-color: beige; }
+      .mainNosotros .nosotros .tit-nos h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .mainNosotros .nosotros .foto-uno .foto-nos {
+      border-radius: 50%; }
+    .mainNosotros .nosotros .tit-text h3 {
+      font-family: "Roboto Condensed", sans-serif; }
+    .mainNosotros .nosotros .text-uno p {
+      font-family: "Playfair Display", serif; }
+    .mainNosotros .nosotros .fotos-guno .f-nos {
+      border-radius: 50%; }
+
+.mainNovedades {
+  display: grid;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: burlywood; }
+  .mainNovedades .novedades {
+    display: grid;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+    .mainNovedades .novedades .tit-nov {
+      background-color: beige; }
+      .mainNovedades .novedades .tit-nov h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .mainNovedades .novedades .text-novu, .mainNovedades .novedades .text-novd {
+      background-color: beige;
+      font-family: "Roboto Condensed", sans-serif; }
+    .mainNovedades .novedades .foto-novu {
+      background-color: burlywood; }
+      .mainNovedades .novedades .foto-novu .img-novu {
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+
+.mainContacto {
+  display: grid;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: beige; }
+  .mainContacto .contacto {
+    display: grid;
+    height: 550px;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    font-size: 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    font-family: "Roboto Condensed", sans-serif; }
+
+/* Inicio Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
     background-color: burlywood;
-    background-image: url(../assets/img/redy.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    border-top-right-radius: 25%;
-    border-bottom-left-radius: 25%;
-    border-top-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    margin: 8px 8px;
-
-}
-.div-cuatro{
-    grid-area: div-cuatro;
-    background-color: beige;
-
-}
-.div-cuatro h3{
-    color: goldenrod;
+    height: 150px; }
+    header .titulo {
+      display: grid;
+      height: auto;
+      justify-content: start;
+      align-items: start;
+      text-align: start;
+      font-size: 30px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      background-color: beige; }
+      header .titulo .titulo-nombre {
+        margin-left: 35px;
+        font-family: "Playfair Display", serif; }
+    header .barra-enlace {
+      background-color: burlywood;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      header .barra-enlace li {
+        list-style: none; }
+        header .barra-enlace li a {
+          text-decoration: none;
+          color: black;
+          font-size: 30px; }
+  main .sec-uno {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.div-cuatro p{
-    color: green;
-    text-align: center;
-    margin: 10px 10px;
-    font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-
-/* fin del main index*/
-
-/* inicio del main galeria */
-.galery{
-    display: grid;
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: 
-    "tit-parr"
-    "tit-parr"
-    "tit-guno"
-    "grupo-uno"
-    "grupo-uno"
-    "tit-gdos"
-    "grupo-dos"
-    "grupo-dos"
-    ;
-}
-
-.tit-parr{
-    grid-area: tit-parr;
+    grid-template-areas: "div-uno div-uno div-dos" "div-cuatro div-cuatro div-dos" "div-cuatro div-cuatro div-tres" "div-cuatro div-cuatro div-tres";
     background-color: beige;
-    text-align: center;
-    font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: goldenrod;
-}
-.tit-parr h3{
-    margin-top: 20px;
-}
-.tit-guno{
-    grid-area: tit-guno;
-    background-color: beige;
-    text-align: center;
-    font-size: large;
-    color: goldenrod;
-    
-}
-.grupo-uno{
-    grid-area: grupo-uno;
-    background-color: beige;
-    background-image: url(../assets/img/redy.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 10px 10px;
-}
-.tit-gdos{
-    grid-area: tit-gdos;
-    background-color: beige;
-    text-align: center;
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: goldenrod;
-}
-.grupo-dos{
-    grid-area: grupo-dos;
-    background-color: beige;
-    background-image: url(../assets/img/redy.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-    border-radius: 50%;
-    margin: 10px 10px;  
-}
-
-
-
-
-
-/* fin del main galeria */
-/*inicio del main nosotros*/
-
-.nosotros{
+    height: 700px; }
+    main .sec-uno .div-uno {
+      grid-area: div-uno; }
+      main .sec-uno .div-uno h3 {
+        background-color: beige; }
+    main .sec-uno .div-dos {
+      grid-area: div-dos;
+      background-color: beige;
+      margin-bottom: 12px; }
+      main .sec-uno .div-dos .fotito {
+        border-radius: 50%; }
+    main .sec-uno .div-tres {
+      grid-area: div-tres;
+      background-color: beige; }
+      main .sec-uno .div-tres .foti {
+        border-radius: 50%; }
+    main .sec-uno .div-cuatro {
+      grid-area: div-cuatro;
+      background-color: beige; }
+      main .sec-uno .div-cuatro h3 {
+        font-family: "Roboto Condensed", sans-serif; }
+      main .sec-uno .div-cuatro p {
+        font-family: "Playfair Display", serif; }
+  footer {
     display: grid;
-    height: 500px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "tit-nos"
-    "foto-uno"
-    "tit-text"
-    "text-uno"
-    "fotos-guno"
-    ;
-}
-
-
-.tit-nos{
-    grid-area: tit-nos;
-    background-color: aqua;
-}
-.foto-uno{
-    grid-area: foto-uno;
-    background-color: rgb(0, 255, 85);
-}
-.tit-text{
-    grid-area: tit-text;
-    background-color: rgb(17, 0, 255);
-}
-.text-uno{
-    grid-area: text-uno;
-    background-color: rgb(255, 0, 30);
-}
-.fotos-guno{
-    grid-area: fotos-guno;
-    background-color: rgb(255, 170, 0);
-}
-
-
-
-/*finde del main nosotros*/
-/*inicio del main novedades */
-.novedades{
-    display: grid;
-    height: 400px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "tit-nov"
-    "text-novu"
-    "foto-novu"
-    "text-novd"
-    "foto-novd"
-    ;
-}
-
-.tit-nov{
-    grid-area: tit-nov;
-    background-color: rgb(255, 0, 242)
-}
-.text-novu{
-    grid-area: text-novu;
-    background-color: rgb(255, 77, 0)
-}
-.foto-novu{
-    grid-area: foto-novu;
-    background-color: rgb(255, 238, 0)
-}
-.text-novd{
-    grid-area: text-novd;
-    background-color: rgb(19, 59, 170)
-}
-.foto-novd{
-    grid-area: foto-novd;
-    background-color: rgb(0, 215, 43)
-}
-
-
-/*fin del main novedades*/
-/*inicio del main contacto*/
-
-.contacto{
-    display: grid;
-    height: 400px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "tit-con"
-    "formulario"
-    ;
-}
-.tit-con{
-    grid-area: tit-con;
-    background-color: rgb(246, 255, 196);
-}
-.formulario{
-    grid-area: formulario;
-    background-color: rgb(58, 206, 107);
-}
-
-/*fin del main contacto*/
-/* incio del footer */
-
-.pie-pag{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "info-contacto"
-    "image"
-    ;
-}
-
-.info-contacto{
-    grid-area: info-contacto;
-    background-color: rgb(240, 161, 58);
-}
-
-.image{
-    grid-area: image;
-    background-image: url(../assets/img/logo-redimen.png);
-    background-size: contain;
-    background-repeat: repeat;
-}
-
-
-
-
-/* fin del footer */
-
-
-/*inicio de tablet*/
-/*inicio del main index*/
-@media (min-width:768px) and (max-width:1024px){
-
-.sec-uno{
-    display: grid;
-    height: 500px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "div-uno div-cuatro div-cuatro"
-    "div-dos div-tres div-tres"
-    "div-dos div-tres div-tres"
-    ;
-}
+    grid-template-areas: ". . ." "info-contacto info-contacto info-contacto" "image image image"; }
+    footer .info-contacto {
+      grid-area: info-contacto;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      footer .info-contacto p {
+        font-family: "Playfair Display", serif; }
+    footer .image {
+      grid-area: image;
+      background-color: burlywood; }
+      footer .image .imagee {
+        border-radius: 50%;
+        margin-top: 10px; } }
 
-.div-uno{
-    grid-area: div-uno;
-    
-}
-.div-dos{
-    grid-area: div-dos;
-}
-.div-tres{
-    grid-area: div-tres;
-}
-.div-cuatro{
-    grid-area: div-cuatro;
-}
-
-/*fin del main index*/
-/*inicio del main galeria*/
-
-.galery{
+@media (min-width: 768px) and (max-width: 1023px) {
+  .galery {
     display: grid;
-    height: 500px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "tit-parr tit-parr tit-parr tit-parr"
-    "tit-guno grupo-uno grupo-uno grupo-uno"
-    "tit-guno grupo-uno grupo-uno grupo-uno"
-    "tit-gdos grupo-dos grupo-dos grupo-dos"
-    "tit-gdos grupo-dos grupo-dos grupo-dos"
-
-    
-    
-    
-    ;
-}
-
-.tit-parr{
-    grid-area: tit-parr;
-}
-.foto-promo{
-    grid-area: foto-promo;
-}
-.tit-guno{
-    grid-area: tit-guno;
-}
-.grupo-uno{
-    grid-area: grupo-uno;
-}
-.tit-gdos{
-    grid-area: tit-gdos;
-}
-.grupo-dos{
-    grid-area: grupo-dos;
-}
-
-
-
-/*fin del main galeria*/
-/*inicio del main nosotros*/
-
-.nosotros{
-    display: grid;
-    height: 400px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "tit-nos tit-nos text-uno text-uno text-uno"
-    "foto-uno foto-uno foto-uno foto-uno foto-uno"
-    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
-    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
-    "tit-text tit-text fotos-guno fotos-guno fotos-guno"
-    ;
-}
-
-.tit-nos{
-    grid-area: tit-nos;
-    background-color: aqua;
-}
-.foto-uno{
-    grid-area: foto-uno;
-    background-color: rgb(0, 255, 26);
-}
-.tit-text{
-    grid-area: tit-text;
-    background-color: rgb(60, 0, 255);
-}
-.text-uno{
-    grid-area: text-uno;
-    background-color: rgb(255, 0, 208);
-}
-.fotos-guno{
-    grid-area: fotos-guno;
-    background-color: rgb(218, 21, 21);
-}
-
-
-/*fin del main nosotros*/
-/*inicio del main novedades*/
-
-.novedades{
-    display: grid;
-    height: 400px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "tit-nov tit-nov tit-nov text-novu text-novu text-novu"
-    "foto-novu foto-novu foto-novu foto-novd foto-novd foto-novd"
-    "foto-novu foto-novu foto-novu foto-novd foto-novd foto-novd"
-    "text-novd text-novd text-novd text-novd text-novd text-novd"
-    ;
-}
-.tit-nov{
-    grid-area: tit-nov;
-    background-color: aqua
-}
-.text-novu{
-    grid-area: text-novu;
-    background-color: rgb(0, 26, 255)
-}
-.foto-novu{
-    grid-area: foto-novu;
-    background-color: rgb(255, 149, 0)
-}
-.text-novd{
-    grid-area: text-novd;
-    background-color: rgb(255, 0, 255)
-}
-.foto-novd{
-    grid-area: foto-novd;
-    background-color: rgb(255, 64, 0)
-}
-
-
-/*fin del main novedades*/
-/*inicio del main contacto*/
-
-.contacto{
-    display: grid;
-    height: 400px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "tit-con tit-con tit-con tit-con tit-con"
-    "formulario formulario formulario formulario formulario"
-    "formulario formulario formulario formulario formulario"
-    "formulario formulario formulario formulario formulario"
-    "formulario formulario formulario formulario formulario"
-
-
-    ;
-}
-.tit-con{
-    grid-area: tit-con;
-    background-color: aqua;
-}
-.formulario{
-    grid-area: formulario;
-    background-color: blueviolet;
-}
-
-
-/*fin del main contacto*/
-}
-/*fin de tablet*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tit tit tit-guno" "guno text-guno text-guno" "gdos gdos gdos"; }
+    .galery .tit-parr {
+      grid-area: tit;
+      background-color: beige; }
+      .galery .tit-parr h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .galery .tit-guno {
+      grid-area: tit-guno; }
+      .galery .tit-guno h3 {
+        font-family: "Roboto Condensed", sans-serif; }
+    .galery .grupo-uno {
+      grid-area: guno; }
+      .galery .grupo-uno .img-guno {
+        border-radius: 50%;
+        margin-top: 12px;
+        margin-bottom: 12px; }
+    .galery .text-guno {
+      grid-area: text-guno; }
+      .galery .text-guno p {
+        font-family: "Playfair Display", serif; }
+    .galery .grupo-dos {
+      grid-area: gdos; }
+      .galery .grupo-dos .img-gdos {
+        border-radius: 50%;
+        margin-top: 12px;
+        margin-bottom: 12px; } }
 
 /*inicio desktop*/
-/*inicio del main index*/
-@media (min-width:1024px){
-    
-    .sec-uno{
-        display: grid;
-        height: 600px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-        "div-uno div-uno div-uno div-uno div-uno div-uno" 
-        "div-uno div-uno div-uno div-uno div-uno div-uno" 
-        "div-cuatro div-cuatro div-cuatro div-dos div-dos div-dos" 
-        "div-cuatro div-cuatro div-cuatro div-dos div-dos div-dos" 
-        "div-cuatro div-cuatro div-cuatro div-tres div-tres div-tres"
-        "div-cuatro div-cuatro div-cuatro div-tres div-tres div-tres" 
-        ;
-    }
-    .div-uno{
-        grid-area: div-uno;
-        
-    }
-    .div-dos{
-        grid-area: div-dos;
-        
-    }
-    .div-tres{
-        grid-area: div-tres;
-        
-    }
-    .div-cuatro{
-        grid-area: div-cuatro;
-        
-    }
-    
+@media (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". . . . . ." "titulo titulo . . . ." ". .  barra barra barra barra";
+    height: 150px; }
+    header .titulo-nombre {
+      grid-area: titulo;
+      margin-left: 35px;
+      font-family: "Playfair Display", serif; }
+    header nav {
+      grid-area: barra; }
+      header nav .barra-enlace {
+        background-color: burlywood;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; }
+        header nav .barra-enlace li {
+          list-style: none; }
+          header nav .barra-enlace li a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px; }
+  main .sec-uno {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "div-uno div-uno div-dos div-dos div-dos div-dos" "div-uno div-uno div-dos div-dos div-dos div-dos" "div-cuatro div-cuatro div-dos div-dos div-dos div-dos" "div-cuatro div-cuatro div-tres div-tres div-tres div-tres" "div-cuatro div-cuatro div-tres div-tres div-tres div-tres" "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"; }
+    main .sec-uno .div-uno {
+      grid-area: div-uno;
+      margin-top: 15px; }
+      main .sec-uno .div-uno h3 {
+        background-color: beige; }
+    main .sec-uno .div-dos {
+      grid-area: div-dos;
+      background-color: beige;
+      margin-top: 12px; }
+      main .sec-uno .div-dos .fotito {
+        border-radius: 50%; }
+    main .sec-uno .div-tres {
+      grid-area: div-tres;
+      background-color: beige; }
+      main .sec-uno .div-tres .foti {
+        border-radius: 50%; }
+    main .sec-uno .div-cuatro {
+      grid-area: div-cuatro;
+      background-color: beige; }
+      main .sec-uno .div-cuatro h3 {
+        font-family: "Roboto Condensed", sans-serif; }
+      main .sec-uno .div-cuatro p {
+        font-family: "Playfair Display", serif; } }
 
-/*fin de main index*/
-/*inicio de main galeria */
-
-    .galery{
-        display: grid;
-        height: 500px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: 
-        "tit-parr tit-parr tit-parr tit-parr tit-parr tit-parr"
-        "tit-parr tit-parr tit-parr tit-parr tit-parr tit-parr"
-        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
-        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
-        "tit-guno tit-guno grupo-uno grupo-uno grupo-uno grupo-uno"
-        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
-        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
-        "tit-gdos tit-gdos grupo-dos grupo-dos grupo-dos grupo-dos"
-        ;
-    }
-    .tit-parr{
-        grid-area: tit-parr;
-        
-    }
-    .foto-promo{
-        grid-area: foto-promo;
-        
-    }
-    .tit-guno{
-        grid-area: tit-guno;
-        
-    }
-    .grupo-uno{
-        grid-area: grupo-uno;
-        
-    }
-    .tit-gdos{
-        grid-area: tit-gdos;
-        
-    }
-    .grupo-dos{
-        grid-area: grupo-dos;
-        
-    }
-    
-
-/*fin de main galeria */
-/*inicio del main nosotros*/
-    .nosotros{
-        display: grid;
-        height: 400px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "tit-nos tit-nos foto-uno foto-uno foto-uno foto-uno"
-        "tit-nos tit-nos foto-uno foto-uno foto-uno foto-uno"
-        "tit-text tit-text fotos-guno fotos-guno fotos-guno fotos-guno"
-        "tit-text tit-text fotos-guno fotos-guno fotos-guno fotos-guno"
-        "text-uno text-uno fotos-guno fotos-guno fotos-guno fotos-guno"
-        "text-uno text-uno fotos-guno fotos-guno fotos-guno fotos-guno"
-        ;
-    }
-    .tit-nos{
-        grid-area: tit-nos;
-        background-color: aqua;
-    }
-    .foto-uno{
-        grid-area: foto-uno;
-        background-color: red;
-    }
-    .tit-text{
-        grid-area: tit-text;
-        background-color: rgb(168, 168, 28);
-    }
-    .text-uno{
-        grid-area: text-uno;
-        background-color: yellow;
-    }
-    .fotos-guno{
-        grid-area: fotos-guno;
-        background-color: rgb(207, 241, 138);
-    }
-
-/*fin de main nosotros*/
-/*inicio del main novedades*/
-    .novedades{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
-        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
-        "foto-novu foto-novu foto-novu text-novd text-novd text-novd"
-        "foto-novu foto-novu foto-novu text-novd text-novd text-novd"
-        "foto-novd foto-novd foto-novd foto-novd foto-novd foto-novd"
-        "foto-novd foto-novd foto-novd foto-novd foto-novd foto-novd"
-        ; 
-    }
-    .tit-nov{
-        grid-area: tit-nov;
-        background-color: aqua;
-    }
-    .text-novu{
-        grid-area: text-novu;
-        background-color: rgb(68, 0, 255);
-    }
-    .foto-novu{
-        grid-area: foto-novu;
-        background-color: rgb(255, 238, 0);
-    }
-    .text-novd{
-        grid-area: text-novd;
-        background-color: rgb(0, 255, 64);
-    }
-    .foto-novd{
-        grid-area: foto-novd;
-        background-color: rgb(255, 0, 55);
-    }
-
-
-/*fin del main novedades*/
-/*inicio del main contacto*/
-    .contacto{
-        display: grid;
-        height: 500px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-        "tit-con tit-con tit-con tit-con tit-con tit-con"
-        "formulario formulario formulario formulario formulario formulario"
-        "formulario formulario formulario formulario formulario formulario"
-        "formulario formulario formulario formulario formulario formulario"
-        "formulario formulario formulario formulario formulario formulario"
-        "formulario formulario formulario formulario formulario formulario"
-        ;
-    }
-    .tit-con{
-        grid-area: tit-con;
-        background-color: beige;
-    }
-    .formulario{
-        grid-area: formulario;
-        background-color: rgb(36, 207, 36);
-    }
-/*fin del main contacto*/
-
-
-
-
-}
-/*fin desktop*/
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1024px) {
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "tit tit tit tit tit" "tit-guno tit-guno . . . " "guno guno guno guno guno" "text-guno text-guno text-guno text-guno text-guno" "gdos gdos gdos gdos gdos"; }
+    .galery .tit-parr {
+      grid-area: tit;
+      background-color: beige; }
+      .galery .tit-parr h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .galery .tit-guno {
+      grid-area: tit-guno; }
+      .galery .tit-guno h3 {
+        font-family: "Roboto Condensed", sans-serif; }
+    .galery .grupo-uno {
+      grid-area: guno; }
+      .galery .grupo-uno .img-guno {
+        border-radius: 50%;
+        margin-top: 12px;
+        margin-bottom: 12px; }
+    .galery .text-guno {
+      grid-area: text-guno; }
+      .galery .text-guno p {
+        font-family: "Playfair Display", serif; }
+    .galery .grupo-dos {
+      grid-area: gdos; }
+      .galery .grupo-dos .img-gdos {
+        border-radius: 50%;
+        margin-top: 12px;
+        margin-bottom: 12px; } }

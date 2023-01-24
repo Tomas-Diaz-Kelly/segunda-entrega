@@ -13,41 +13,34 @@
 
 
 <body>
-        <header>
+        <header class="titulo">
+                <div class="titulo-nombre">
+                        <H1>Baobab</H1>
+                        <h2>Home & Deco</h2>
+                </div>
+                <nav>
+                        <ul class="barra-enlace">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./galeria.html">Galeria    </a></li>
+                                <li><a href="./nosotros.html">Nosotros   </a></li>
+                                <li><a href="./novedades.html">Novedades  </a></li>
+                                <li><a href="./contacto.html">Contacto   </a></li>
+                        </ul>
+                </nav>
         
-                <section class="titulo">
-                        <div class="titulo__nombre">
-                                <H1>Baobab</H1>
-                                <h2>Home & Deco</h2>
-                        </div>
-        
-                </section>
-                <section>
-                        <nav>
-                                <ul class="barra-enlace">
-                                        <li><a href="../index.html">Home</a></li>
-                                        <li><a href="./galeria.html">Galeria    </a></li>
-                                        <li><a href="./nosotros.html">Nosotros   </a></li>
-                                        <li><a href="./novedades.html">Novedades  </a></li>
-                                        <li><a href="./contacto.html">Contacto   </a></li>
-                                </ul>
-                        </nav>
-                </section>
-        </header>
+</header>
 
-<main>
+        <main class="mainContacto">
+        
         
         <section class="contacto">
-                <div class="tit-con">
-                        <h3>Contacto</h3>
-                </div>
-                <div class="formulario">
-                        <form action="">
-                                <fieldset class="centrado">
-                                        <legend>Contacto</legend>
-                                        
-                                        <label for="nombre">
-                                                <span>Nombre:</span>
+                
+                <form action="">
+                        <fieldset class="centrado">
+                                <legend>Contacto</legend>
+                                
+                                <label for="nombre">
+                                        <span>Nombre:</span>
                                                 <input type="text" id="nombre" placeholder="ingrese el nombre"  required>
                                         </label>
                                         <label for="apellido">
@@ -58,36 +51,35 @@
                                                 <span>Mail:</span>
                                                 <input type="email" id="e-mail" placeholder="ingrese el email"  required>
                                         </label>
-                                        <fieldset>
-                                                <legend>Comentarios</legend>
+                        </fieldset>
+                        <fieldset>
+                                        <legend>Comentarios</legend>
                                                 
                                                 <textarea name="comentarios" id="comentarios" cols="40" rows="15">
                                                 </textarea>
-                                        </fieldset>
+                        </fieldset>
                                         
                                         <input type="submit">
                                         <input type="reset">
-                                </fieldset>
-                        </form>  
-                </div>
+                </form>
         </section>
 
            
                 
         </main>
         
-        <footer>
-                <section class="pie-pag">
+        <footer class="footer">
+                
                         <div class="info-contacto">
                                 <p>Baobab@gmail.com.ar</p>
                                 <p>Telefono - 01188888888</p>
                                 <p>Instagram: @Baobab.hd</p>     
                         </div>
                         <div class="image">
-            
+                                <img class="imagee" src="../assets/img/logo-redimen.png" alt="">
                         </div>
-                </section>
-            
-            </footer>
+                
+        
+        </footer>
 </body>
 </html>

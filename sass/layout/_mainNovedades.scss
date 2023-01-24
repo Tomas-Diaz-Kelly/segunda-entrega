@@ -1,0 +1,31 @@
+.mainNovedades{
+    @include codigo-main (center,center,center,20px,repeat(1, 1fr),repeat(1, 1fr));
+    background-color: $bg-secundario;
+    .novedades{
+    @include codigo-main (center,center,center,20px,repeat(1, 1fr),repeat(4, 1fr));
+        
+        .tit-nov{
+            background-color: $bg-principal;
+            h3{
+                font-family: $typo-principal;
+                font-size: 30px;
+            }
+        }
+        .text-novu{
+            background-color: $bg-principal;
+            font-family: $typo-principal;
+        }
+        .foto-novu{
+            background-color:$bg-secundario;
+            .img-novu{
+                border-radius: 50%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        .text-novd{
+            @extend .text-novu;
+        }
+       
+    }
+}

@@ -1,0 +1,90 @@
+@media (min-width:1024px){
+    
+header{
+    @include header-desktop (repeat(6, 1fr), repeat(3, 1fr));
+            grid-template-areas: 
+            ". . . . . ."
+            "titulo titulo . . . ."
+            ". .  barra barra barra barra"
+            ;
+            height: 150px;
+                .titulo-nombre{
+                    grid-area: titulo;
+                    margin-left: 35px;
+                    font-family: $typo-secundario;
+                }
+    nav{
+        grid-area: barra;
+        .barra-enlace{ 
+            background-color: $bg-secundario;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            li{
+                list-style: none;            
+                a{
+                    text-decoration: none;
+                    color:  black;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+    
+    main{
+        .sec-uno{
+            @include main-desktop (repeat(6, 1fr), repeat(6, 1fr));
+            grid-template-areas: 
+        "div-uno div-uno div-dos div-dos div-dos div-dos"
+        "div-uno div-uno div-dos div-dos div-dos div-dos"
+        "div-cuatro div-cuatro div-dos div-dos div-dos div-dos"
+        "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
+        "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
+        "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
+        
+    ;
+        .div-uno{
+            grid-area: div-uno;
+            margin-top: 15px;
+            h3{
+                background-color: $bg-principal;
+            }
+        }
+        .div-dos{
+            grid-area: div-dos;
+            background-color: $bg-principal;
+            margin-top: 12px;
+            .fotito{
+                border-radius: 50%;
+
+            }
+        }
+        .div-tres{
+            grid-area: div-tres;
+            background-color: $bg-principal;
+            .foti{
+                border-radius: 50%;
+            }
+        }
+        .div-cuatro{
+            grid-area: div-cuatro;
+            background-color: $bg-principal;
+            h3{
+                font-family: $typo-principal;
+            }
+            p{
+                font-family: $typo-secundario;
+            }
+        }
+}
+}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@media (min-width:1024px){
+
+    .galery{
+        @include main-desktop (repeat(5, 1fr), repeat(5, 1fr));
+        grid-template-areas: 
+        "tit tit tit tit tit"
+        "tit-guno tit-guno . . . "
+        "guno guno guno guno guno"
+        "text-guno text-guno text-guno text-guno text-guno"
+        "gdos gdos gdos gdos gdos"
+        ;
+        .tit-parr{
+            grid-area: tit;
+                background-color: $bg-principal;
+                h3{
+                    font-family: $typo-principal;
+                    font-size: 30px;
+                }
+            }
+            .tit-guno{
+                grid-area: tit-guno;
+                h3{
+                    font-family: $typo-principal;
+                }
+            }
+            .grupo-uno{
+                grid-area: guno;
+                .img-guno{
+                    border-radius: 50%;
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                }
+            }
+            .text-guno{
+                grid-area: text-guno;
+                p{
+                    font-family: $typo-secundario;
+                }
+            }
+            .grupo-dos{
+                grid-area: gdos;
+                .img-gdos{
+                    border-radius: 50%;
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+

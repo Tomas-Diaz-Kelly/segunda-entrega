@@ -1,0 +1,38 @@
+.mainNosotros{
+    @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(1, 1fr));
+    background-color: $bg-secundario;
+    .nosotros{
+    @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(5, 1fr));
+
+        background-color: $bg-secundario;
+        .tit-nos{
+            background-color: $bg-principal;
+            h3{
+                font-family: $typo-principal;
+                font-size: 30px;
+            }
+        }
+        .foto-uno{
+            .foto-nos{
+                border-radius: 50%;
+            }
+        }
+        .tit-text{
+            h3{
+                font-family: $typo-principal;
+
+            }
+        }
+        .text-uno{
+            p{
+                font-family: $typo-secundario;
+
+            }
+        }
+        .fotos-guno{
+            .f-nos{
+                border-radius: 50%;
+            }
+        }
+    }
+}

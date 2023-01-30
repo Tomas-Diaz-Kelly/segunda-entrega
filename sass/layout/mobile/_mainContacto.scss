@@ -1,0 +1,13 @@
+
+    .contacto{
+    @include main-contacto(repeat(1, 1fr),repeat(1, 1fr));
+        grid-template-areas: 
+        "formu"
+        ;
+        font-family: $typo-principal;
+        justify-content: center;
+        align-items: center;
+        .formu{
+            grid-area: formu;
+        }
+    }

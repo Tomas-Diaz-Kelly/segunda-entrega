@@ -11,7 +11,7 @@
 
 @mixin codigo-main ($justify, $align,$textalign,$size, $col, $row){
     display: grid;
-    height: 550px;
+    height: 700px;
     justify-content: $justify;
     align-items: $align;
     text-align: $textalign;
@@ -27,6 +27,14 @@
     align-items: $align;
     text-align: $textalign;
     font-size: $size;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+
+@mixin main-contacto ($col,$row){
+    display: grid;
+    height: 600px;
     grid-template-columns: $col;
     grid-template-rows: $row;
 }

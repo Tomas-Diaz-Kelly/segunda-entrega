@@ -1,0 +1,37 @@
+@media (min-width:768px) and (max-width:1023px){
+    .nosotros{
+        @include main-tablet (repeat(3, 1fr),repeat(3, 1fr));
+            grid-template-areas:
+            "tit-nos tit-nos foto-uno"
+            "tit-text text-uno text-uno"
+            "fotos-guno fotos-guno fotos-guno"
+            ;    
+        
+        .tit-nos{
+            grid-area: tit-nos;       
+            background-color: $bg-principal;
+            padding: 30px;
+            h3{
+                font-size: 35px;
+                font-family: $typo-secundario;
+            }
+        }
+        .foto-uno{
+            grid-area: foto-uno;
+            background-color: $bg-principal;
+        }
+        .tit-text{
+            grid-area: tit-text;
+            background-color: $bg-principal;
+        }
+        .text-uno{
+            grid-area: text-uno;
+            background-color: $bg-principal;
+        }
+        .fotos-guno{
+            grid-area: fotos-guno;
+            background-color: $bg-principal;
+        }
+    }
+}
+

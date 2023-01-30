@@ -10,17 +10,19 @@ header {
   font-size: 15px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background-color: beige; }
+  background-color: beige;
+  height: 150px; }
   header .titulo {
     background-color: burlywood; }
   header .barra-enlace {
     background-color: burlywood;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; }
+    gap: 5px; }
     header .barra-enlace li {
       list-style: none; }
       header .barra-enlace li a {
+        background: none;
         text-decoration: none;
         color: black;
         font-size: 15px; }
@@ -29,7 +31,7 @@ main {
   background-color: beige; }
   main .sec-uno {
     display: grid;
-    height: 550px;
+    height: 700px;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: center;
@@ -84,7 +86,7 @@ footer {
 
 .galery {
   display: grid;
-  height: 550px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -119,94 +121,81 @@ footer {
       margin-top: 12px;
       margin-bottom: 12px; }
 
-.mainNosotros {
+.nosotros {
   display: grid;
-  height: 550px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 15px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  background-color: burlywood; }
-  .mainNosotros .nosotros {
-    display: grid;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    background-color: burlywood; }
-    .mainNosotros .nosotros .tit-nos {
-      background-color: beige; }
-      .mainNosotros .nosotros .tit-nos h3 {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 30px; }
-    .mainNosotros .nosotros .foto-uno .foto-nos {
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "tit-nos" "foto-uno" "tit-text" "text-uno" "fotos-guno";
+  margin-bottom: 35px; }
+  .nosotros .tit-nos {
+    grid-area: tit-nos;
+    background-color: beige; }
+    .nosotros .tit-nos h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 30px; }
+  .nosotros .foto-uno {
+    grid-area: foto-uno; }
+    .nosotros .foto-uno .foto-nos {
       border-radius: 50%; }
-    .mainNosotros .nosotros .tit-text h3 {
+  .nosotros .tit-text {
+    grid-area: tit-text; }
+    .nosotros .tit-text h3 {
       font-family: "Roboto Condensed", sans-serif; }
-    .mainNosotros .nosotros .text-uno p {
+  .nosotros .text-uno {
+    grid-area: text-uno; }
+    .nosotros .text-uno p {
       font-family: "Playfair Display", serif; }
-    .mainNosotros .nosotros .fotos-guno .f-nos {
+  .nosotros .fotos-guno {
+    grid-area: fotos-guno; }
+    .nosotros .fotos-guno .f-nos {
       border-radius: 50%; }
 
-.mainNovedades {
+.novedades {
   display: grid;
-  height: 550px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 20px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  background-color: burlywood; }
-  .mainNovedades .novedades {
-    display: grid;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); }
-    .mainNovedades .novedades .tit-nov {
-      background-color: beige; }
-      .mainNovedades .novedades .tit-nov h3 {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 30px; }
-    .mainNovedades .novedades .text-novu, .mainNovedades .novedades .text-novd {
-      background-color: beige;
-      font-family: "Roboto Condensed", sans-serif; }
-    .mainNovedades .novedades .foto-novu {
-      background-color: burlywood; }
-      .mainNovedades .novedades .foto-novu .img-novu {
-        border-radius: 50%;
-        margin-top: 10px;
-        margin-bottom: 10px; }
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "tit-nov" "text-novu" "foto-novu" "text-novd"; }
+  .novedades .tit-nov {
+    grid-area: tit-nov;
+    background-color: beige; }
+    .novedades .tit-nov h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 30px; }
+  .novedades .text-novu, .novedades .text-novd {
+    grid-area: text-novu;
+    background-color: beige;
+    font-family: "Roboto Condensed", sans-serif; }
+  .novedades .foto-novu {
+    grid-area: foto-novu;
+    background-color: burlywood; }
+    .novedades .foto-novu .img-novu {
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .novedades .text-novd {
+    grid-area: text-novd; }
 
-.mainContacto {
+.contacto {
   display: grid;
-  height: 550px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
+  height: 600px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  background-color: beige; }
-  .mainContacto .contacto {
-    display: grid;
-    height: 550px;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-    font-size: 15px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    font-family: "Roboto Condensed", sans-serif; }
+  grid-template-areas: "formu";
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: center;
+  align-items: center; }
+  .contacto .formu {
+    grid-area: formu; }
 
 /* Inicio Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -320,6 +309,58 @@ footer {
         margin-top: 12px;
         margin-bottom: 12px; } }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tit-nos tit-nos foto-uno" "tit-text text-uno text-uno" "fotos-guno fotos-guno fotos-guno"; }
+    .nosotros .tit-nos {
+      grid-area: tit-nos;
+      background-color: beige;
+      padding: 30px; }
+      .nosotros .tit-nos h3 {
+        font-size: 35px;
+        font-family: "Playfair Display", serif; }
+    .nosotros .foto-uno {
+      grid-area: foto-uno;
+      background-color: beige; }
+    .nosotros .tit-text {
+      grid-area: tit-text;
+      background-color: beige; }
+    .nosotros .text-uno {
+      grid-area: text-uno;
+      background-color: beige; }
+    .nosotros .fotos-guno {
+      grid-area: fotos-guno;
+      background-color: beige; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tit-nov text-novu text-novu" "foto-novu foto-novu foto-novu" "text-novd text-novd text-novd"; }
+    .novedades .tit-nov {
+      grid-area: tit-nov;
+      background-color: beige; }
+      .novedades .tit-nov h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .novedades .text-novu, .novedades .text-novd {
+      grid-area: text-novu;
+      background-color: beige;
+      font-family: "Roboto Condensed", sans-serif; }
+    .novedades .foto-novu {
+      grid-area: foto-novu;
+      background-color: burlywood; }
+      .novedades .foto-novu .img-novu {
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+    .novedades .text-novd {
+      grid-area: text-novd; } }
+
 /*inicio desktop*/
 @media (min-width: 1024px) {
   header {
@@ -327,7 +368,7 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: ". . . . . ." "titulo titulo . . . ." ". .  barra barra barra barra";
-    height: 150px; }
+    height: 170px; }
     header .titulo-nombre {
       grid-area: titulo;
       margin-left: 35px;
@@ -406,3 +447,56 @@ footer {
         border-radius: 50%;
         margin-top: 12px;
         margin-bottom: 12px; } }
+
+@media (min-width: 1024px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno" "fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno"; }
+    .nosotros .tit-nos {
+      grid-area: tit-nos;
+      background-color: beige;
+      padding: 30px; }
+      .nosotros .tit-nos h3 {
+        font-size: 35px;
+        font-family: "Playfair Display", serif; }
+    .nosotros .foto-uno {
+      grid-area: foto-uno;
+      background-color: beige; }
+    .nosotros .tit-text {
+      grid-area: tit-text;
+      background-color: beige; }
+    .nosotros .text-uno {
+      grid-area: text-uno;
+      background-color: beige; }
+    .nosotros .fotos-guno {
+      grid-area: fotos-guno;
+      background-color: beige; } }
+
+@media (min-width: 1024px) {
+  .novedades {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "tit-nov tit-nov text-novu text-novu text-novu text-novu" "tit-nov tit-nov text-novu text-novu text-novu text-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu"  "text-novd text-novd text-novd foto-novu foto-novu foto-novu"; }
+    .novedades .tit-nov {
+      grid-area: tit-nov;
+      background-color: beige; }
+      .novedades .tit-nov h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
+    .novedades .text-novu, .novedades .text-novd {
+      grid-area: text-novu;
+      background-color: beige;
+      font-family: "Roboto Condensed", sans-serif; }
+    .novedades .foto-novu {
+      grid-area: foto-novu;
+      background-color: burlywood;
+      border-radius: 50%; }
+      .novedades .foto-novu .img-novu {
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+    .novedades .text-novd {
+      grid-area: text-novd; } }

@@ -1,11 +1,16 @@
-.mainNosotros{
-    @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(1, 1fr));
-    background-color: $bg-secundario;
-    .nosotros{
+.nosotros{
     @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(5, 1fr));
-
-        background-color: $bg-secundario;
+    grid-template-areas: 
+    "tit-nos"
+    "foto-uno"
+    "tit-text"
+    "text-uno"
+    "fotos-guno"
+    ;
+    
+    margin-bottom: 35px;
         .tit-nos{
+            grid-area: tit-nos;
             background-color: $bg-principal;
             h3{
                 font-family: $typo-principal;
@@ -13,26 +18,29 @@
             }
         }
         .foto-uno{
+            grid-area: foto-uno;
             .foto-nos{
                 border-radius: 50%;
             }
         }
         .tit-text{
+            grid-area: tit-text;
             h3{
                 font-family: $typo-principal;
 
             }
         }
         .text-uno{
+            grid-area: text-uno;
             p{
                 font-family: $typo-secundario;
 
             }
         }
         .fotos-guno{
+            grid-area: fotos-guno;
             .f-nos{
                 border-radius: 50%;
             }
         }
     }
-}

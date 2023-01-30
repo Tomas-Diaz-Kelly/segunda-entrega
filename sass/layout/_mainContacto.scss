@@ -1,8 +1,0 @@
-.mainContacto{
-    @include codigo-main (center,center,center,15px,repeat(1, 1fr),repeat(1, 1fr));
-    background-color: $bg-principal;
-    .contacto{
-    @include codigo-main (center,start,center,15px,repeat(1, 1fr),repeat(1, 1fr));
-        font-family: $typo-principal;    
-    }
-}

@@ -1,10 +1,13 @@
-.mainNovedades{
-    @include codigo-main (center,center,center,20px,repeat(1, 1fr),repeat(1, 1fr));
-    background-color: $bg-secundario;
     .novedades{
     @include codigo-main (center,center,center,20px,repeat(1, 1fr),repeat(4, 1fr));
-        
+        grid-template-areas: 
+        "tit-nov"
+        "text-novu"
+        "foto-novu"
+        "text-novd"
+        ;
         .tit-nov{
+            grid-area: tit-nov;
             background-color: $bg-principal;
             h3{
                 font-family: $typo-principal;
@@ -12,10 +15,12 @@
             }
         }
         .text-novu{
+            grid-area: text-novu;
             background-color: $bg-principal;
             font-family: $typo-principal;
         }
         .foto-novu{
+            grid-area: foto-novu;
             background-color:$bg-secundario;
             .img-novu{
                 border-radius: 50%;
@@ -24,8 +29,7 @@
             }
         }
         .text-novd{
+            grid-area: text-novd;
             @extend .text-novu;
         }
-       
     }
-}

@@ -3,25 +3,33 @@
 @import"./utilities/mixin";
 @import"./base/typo";
 @import"./base/reset";
-@import"./layout/header";
-@import"./layout/main";
-@import"./layout/footer";
-@import"./layout/mainGaleria";
-@import"./layout/mainNosotros";
-@import"./layout/mainNovedades";
-@import"./layout/mainContacto";
+@import"./layout/mobile/header";
+@import"./layout/mobile/main";
+@import"./layout/mobile/footer";
+@import"./layout/mobile/mainGaleria";
+@import"./layout/mobile/mainNosotros";
+@import"./layout/mobile/mainNovedades";
+@import"./layout/mobile/mainContacto";
 
 
 /* Inicio Tablet */
 
-@import"./layout/media/mediaTabletindex";
-@import"./layout/media/mediaTabletgaleria";
+@import"./layout/tablet/mediaTabletindex";
+@import"./layout/tablet/mediaTabletgaleria";
+@import"./layout/tablet/mediaTabletnosotros";
+@import"./layout/tablet/mediaTabletnovedades";
+@import"./layout/tablet/mediaTabletcontacto";
+
+
 
 
 /*inicio desktop*/
 
-@import"./layout/media/mediaDesktopindex";
-@import"./layout/media/mediaDesktopgaleria";
+@import"./layout/desktop/mediaDesktopindex";
+@import"./layout/desktop/mediaDesktopgaleria";
+@import"./layout/desktop/mediaDesktopnosotros";
+@import"./layout/desktop/mediaDesktopnovedades";
+
 
 
 

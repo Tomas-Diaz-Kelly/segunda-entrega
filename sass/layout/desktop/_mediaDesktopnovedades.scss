@@ -1,0 +1,41 @@
+@media (min-width:1024px){
+    .novedades{
+        @include main-desktop (repeat(6, 1fr),repeat(6, 1fr));
+        grid-template-areas: 
+        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
+        "tit-nov tit-nov text-novu text-novu text-novu text-novu"
+        "text-novd text-novd text-novd foto-novu foto-novu foto-novu"
+        "text-novd text-novd text-novd foto-novu foto-novu foto-novu"
+        "text-novd text-novd text-novd foto-novu foto-novu foto-novu" 
+        "text-novd text-novd text-novd foto-novu foto-novu foto-novu" 
+        ;
+
+    .tit-nov{
+        grid-area: tit-nov;
+        background-color: $bg-principal;
+        h3{
+            font-family: $typo-principal;
+            font-size: 30px;
+        }
+    }
+    .text-novu{
+        grid-area: text-novu;
+        background-color: $bg-principal;
+        font-family: $typo-principal;
+    }
+    .foto-novu{
+        grid-area: foto-novu;
+        background-color:$bg-secundario;
+        border-radius: 50%;
+        .img-novu{
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .text-novd{
+        grid-area: text-novd;
+        // @extend .text-novu;
+    }
+}
+}

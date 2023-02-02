@@ -1,11 +1,16 @@
 @media (min-width:768px) and (max-width:1023px){
 
-    
+    .contacto{
+        @include main-contacto (repeat(3, 1fr),repeat(3, 1fr));
+        grid-template-areas: 
+        ". formu ."
+        ". formu ."
+        ". formu ."
+        ;
 
-
-
-
-
-
-
+        .formu{
+            grid-area: formu;
+        
+        }
+    }
 }

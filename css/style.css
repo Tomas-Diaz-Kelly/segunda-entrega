@@ -361,6 +361,16 @@ footer {
     .novedades .text-novd {
       grid-area: text-novd; } }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contacto {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". formu ." ". formu ." ". formu ."; }
+    .contacto .formu {
+      grid-area: formu; } }
+
 /*inicio desktop*/
 @media (min-width: 1024px) {
   header {
@@ -500,3 +510,13 @@ footer {
         margin-bottom: 10px; }
     .novedades .text-novd {
       grid-area: text-novd; } }
+
+@media (min-width: 1024px) {
+  .contacto {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ". formu formu formu formu ." ". formu formu formu formu ." ". formu formu formu formu ." ". formu formu formu formu ." ". formu formu formu formu ." ". formu formu formu formu ."; }
+    .contacto .formu {
+      grid-area: formu; } }

@@ -1,32 +1,16 @@
 @media (min-width:768px) and (max-width:1023px){
     
     header{
-        background-color: $bg-secundario;
-        height: 150px;
-        .titulo{    
-                @include codigo-header (start, start,start,30px, repeat(1, 1fr), repeat(1, 1fr));
-                background-color: $bg-principal;
-                .titulo-nombre{
-                    margin-left: 35px;
-                    font-family: $typo-secundario;
+        @include header-tablet (repeat(3, 1fr), repeat(1, 1fr));
+                grid-template-areas: 
+                "navbar navbar navbar"
+                ;
+                height: 90px;
+                .navbar{
+                    grid-area: navbar;
+                    
                 }
             }
-    
-            .barra-enlace{
-                background-color: $bg-secundario;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-                li{
-                    list-style: none;            
-                    a{
-                        text-decoration: none;
-                        color:  black;
-                        font-size: 30px;
-                    }
-                }
-            }
-        }
     
     main{
         margin-top: 25px;

@@ -3,29 +3,12 @@
 /*Colores letras*/
 header {
   display: grid;
-  height: auto;
-  justify-content: center;
-  align-items: end;
-  text-align: center;
-  font-size: 15px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  background-color: beige;
-  height: 150px; }
-  header .titulo {
-    background-color: burlywood; }
-  header .barra-enlace {
-    background-color: burlywood;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 5px; }
-    header .barra-enlace li {
-      list-style: none; }
-      header .barra-enlace li a {
-        background: none;
-        text-decoration: none;
-        color: black;
-        font-size: 15px; }
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "navbar";
+  height: 90px; }
+  header .navbar {
+    grid-area: navbar; }
 
 main {
   background-color: beige;
@@ -204,32 +187,13 @@ footer {
 /* Inicio Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    background-color: burlywood;
-    height: 150px; }
-    header .titulo {
-      display: grid;
-      height: auto;
-      justify-content: start;
-      align-items: start;
-      text-align: start;
-      font-size: 30px;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      background-color: beige; }
-      header .titulo .titulo-nombre {
-        margin-left: 35px;
-        font-family: "Playfair Display", serif; }
-    header .barra-enlace {
-      background-color: burlywood;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around; }
-      header .barra-enlace li {
-        list-style: none; }
-        header .barra-enlace li a {
-          text-decoration: none;
-          color: black;
-          font-size: 30px; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "navbar navbar navbar";
+    height: 90px; }
+    header .navbar {
+      grid-area: navbar; }
   main {
     margin-top: 25px; }
     main .sec-uno {
@@ -386,26 +350,12 @@ footer {
   header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: ". . . . . ." "titulo titulo . . . ." ". .  barra barra barra barra";
-    height: 170px; }
-    header .titulo-nombre {
-      grid-area: titulo;
-      margin-left: 35px;
-      font-family: "Playfair Display", serif; }
-    header nav {
-      grid-area: barra; }
-      header nav .barra-enlace {
-        background-color: burlywood;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around; }
-        header nav .barra-enlace li {
-          list-style: none; }
-          header nav .barra-enlace li a {
-            text-decoration: none;
-            color: black;
-            font-size: 30px; }
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "navbar navbar navbar navbar navbar navbar";
+    height: 90px; }
+    header .navbar {
+      grid-area: navbar;
+      justify-content: end; }
   main .sec-uno {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -417,10 +367,10 @@ footer {
       main .sec-uno .div-uno h3 {
         background-color: beige;
         font-family: "Playfair Display", serif;
-        font-size: 40px; }
+        font-size: 30px; }
       main .sec-uno .div-uno p {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 30px; }
+        font-size: 20px; }
     main .sec-uno .div-dos {
       grid-area: div-dos;
       background-color: beige;
@@ -436,10 +386,10 @@ footer {
       main .sec-uno .div-cuatro h3 {
         background-color: beige;
         font-family: "Playfair Display", serif;
-        font-size: 40px; }
+        font-size: 30px; }
       main .sec-uno .div-cuatro p {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 30px; } }
+        font-size: 20px; } }
 
 @media (min-width: 1024px) {
   .galery {
@@ -481,7 +431,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "tit-nos tit-nos tit-nos . . ." "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" ". . . foto-uno foto-uno foto-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno"; }
+    grid-template-areas: "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" ". . . . . ." "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno"; }
     .nosotros .tit-nos {
       grid-area: tit-nos;
       background-color: beige;
@@ -497,13 +447,13 @@ footer {
       background-color: beige; }
       .nosotros .tit-text h3 {
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 30px; }
+        font-size: 25px; }
     .nosotros .text-uno {
       grid-area: text-uno;
       background-color: beige; }
       .nosotros .text-uno p {
         font-family: "Playfair Display", serif;
-        font-size: 30px; } }
+        font-size: 20px; } }
 
 @media (min-width: 1024px) {
   .novedades {

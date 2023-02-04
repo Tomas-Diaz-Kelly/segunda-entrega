@@ -3,9 +3,9 @@
     .nosotros{
         @include main-tablet (repeat(6, 1fr),repeat(6, 1fr));
             grid-template-areas:
-            "tit-nos tit-nos tit-nos . . ."
             "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno"
-            ". . . foto-uno foto-uno foto-uno"
+            "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno"
+            ". . . . . ."
             "tit-text tit-text tit-text text-uno text-uno text-uno"
             "tit-text tit-text tit-text text-uno text-uno text-uno"
             "tit-text tit-text tit-text text-uno text-uno text-uno"
@@ -31,7 +31,7 @@
             background-color: $bg-principal;
             h3{
                 font-family: $typo-principal;
-                font-size: 30px;
+                font-size: 25px;
             }
         }
         .text-uno{
@@ -39,7 +39,7 @@
             background-color: $bg-principal;
             p{
                 font-family: $typo-secundario;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
         

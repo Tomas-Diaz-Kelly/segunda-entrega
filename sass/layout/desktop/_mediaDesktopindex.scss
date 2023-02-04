@@ -1,36 +1,17 @@
 @media (min-width:1024px){
     
 header{
-    @include header-desktop (repeat(6, 1fr), repeat(3, 1fr));
+    @include header-desktop (repeat(6, 1fr), repeat(1, 1fr));
             grid-template-areas: 
-            ". . . . . ."
-            "titulo titulo . . . ."
-            ". .  barra barra barra barra"
+            "navbar navbar navbar navbar navbar navbar"
             ;
-            height: 170px;
-                .titulo-nombre{
-                    grid-area: titulo;
-                    margin-left: 35px;
-                    font-family: $typo-secundario;
-                }
-    nav{
-        grid-area: barra;
-        .barra-enlace{ 
-            background-color: $bg-secundario;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            li{
-                list-style: none;            
-                a{
-                    text-decoration: none;
-                    color:  black;
-                    font-size: 30px;
-                }
+            height: 90px;
+            .navbar{
+                grid-area: navbar;
+                justify-content: end
             }
         }
-    }
-}
+
     
     main{
         .sec-uno{
@@ -50,11 +31,11 @@ header{
             h3{
                 background-color: $bg-principal;
                 font-family: $typo-secundario;
-                font-size: 40px;
+                font-size: 30px;
             }
             p{
                 font-family: $typo-principal;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
         .div-dos{
@@ -77,11 +58,11 @@ header{
             h3{
                 background-color: $bg-principal;
                 font-family: $typo-secundario;
-                font-size: 40px;
+                font-size: 30px;
             }
             p{
                 font-family: $typo-principal;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
 }

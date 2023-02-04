@@ -58,6 +58,17 @@
     grid-template-rows: $row;
 }
 
+@mixin header-mobile ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
+
+@mixin header-tablet ($col,$row){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}
 
 @mixin header-desktop ($col,$row){
     display: grid;

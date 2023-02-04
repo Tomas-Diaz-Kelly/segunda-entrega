@@ -183,8 +183,7 @@ footer {
     margin-left: 15px;
     margin-right: 15px; }
     .novedades .foto-novu .img-novu {
-      border-top-right-radius: 50%;
-      border-bottom-left-radius: 50%;
+      border-radius: 50%;
       margin-top: 10px;
       margin-bottom: 10px; }
   .novedades .text-novd {
@@ -468,7 +467,8 @@ footer {
     .galery .text-guno {
       grid-area: text-guno; }
       .galery .text-guno p {
-        font-family: "Playfair Display", serif; }
+        font-family: "Playfair Display", serif;
+        font-size: 30px; }
     .galery .grupo-dos {
       grid-area: gdos; }
       .galery .grupo-dos .img-gdos {
@@ -481,7 +481,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" ". . . . . ." "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno"; }
+    grid-template-areas: "tit-nos tit-nos tit-nos . . ." "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno" ". . . foto-uno foto-uno foto-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno" "tit-text tit-text tit-text text-uno text-uno text-uno"; }
     .nosotros .tit-nos {
       grid-area: tit-nos;
       background-color: beige;
@@ -495,16 +495,22 @@ footer {
     .nosotros .tit-text {
       grid-area: tit-text;
       background-color: beige; }
+      .nosotros .tit-text h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 30px; }
     .nosotros .text-uno {
       grid-area: text-uno;
-      background-color: beige; } }
+      background-color: beige; }
+      .nosotros .text-uno p {
+        font-family: "Playfair Display", serif;
+        font-size: 30px; } }
 
 @media (min-width: 1024px) {
   .novedades {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "tit-nov tit-nov text-novu text-novu text-novu text-novu" "tit-nov tit-nov text-novu text-novu text-novu text-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu" "text-novd text-novd text-novd foto-novu foto-novu foto-novu"  "text-novd text-novd text-novd foto-novu foto-novu foto-novu"; }
+    grid-template-areas: "tit-nov tit-nov text-novu text-novu text-novu text-novu" "tit-nov tit-nov text-novu text-novu text-novu text-novu" "text-novd text-novd foto-novu foto-novu foto-novu foto-novu" "text-novd text-novd foto-novu foto-novu foto-novu foto-novu" "text-novd text-novd foto-novu foto-novu foto-novu foto-novu"  "text-novd text-novd foto-novu foto-novu foto-novu foto-novu"; }
     .novedades .tit-nov {
       grid-area: tit-nov;
       background-color: beige; }

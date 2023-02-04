@@ -22,8 +22,12 @@
         .foto-novu{
             grid-area: foto-novu;
             background-color:$bg-secundario;
+            border-radius: 30%;
+            margin-left: 15px;
+            margin-right: 15px;
             .img-novu{
-                border-radius: 50%;
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }

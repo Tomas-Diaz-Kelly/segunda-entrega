@@ -5,10 +5,12 @@
             grid-template-areas:
             "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno"
             "tit-nos tit-nos tit-nos foto-uno foto-uno foto-uno"
+            ". . . . . ."
             "tit-text tit-text tit-text text-uno text-uno text-uno"
             "tit-text tit-text tit-text text-uno text-uno text-uno"
-            "fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno"
-            "fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno fotos-guno"
+            "tit-text tit-text tit-text text-uno text-uno text-uno"
+            
+            
             ;    
         
         .tit-nos{
@@ -32,10 +34,7 @@
             grid-area: text-uno;
             background-color: $bg-principal;
         }
-        .fotos-guno{
-            grid-area: fotos-guno;
-            background-color: $bg-principal;
-        }
+        
     }
 
 

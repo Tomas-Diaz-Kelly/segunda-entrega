@@ -29,6 +29,7 @@
         }
     
     main{
+        margin-top: 25px;
         .sec-uno{
                 @include main-tablet (repeat(3, 1fr), repeat(4, 1fr));
                 @include mainTablet-positions(center,center,center);
@@ -53,6 +54,8 @@
                     margin-bottom: 12px;
                     .fotito{
                         border-radius: 50%;
+                        margin-right: 15px;
+                        margin-top: 15px;
                         
                     }
                 }

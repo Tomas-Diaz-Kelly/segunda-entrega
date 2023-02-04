@@ -39,7 +39,7 @@ header{
         "div-uno div-uno div-dos div-dos div-dos div-dos"
         "div-uno div-uno div-dos div-dos div-dos div-dos"
         "div-cuatro div-cuatro div-dos div-dos div-dos div-dos"
-        "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
+        "div-cuatro div-cuatro . . . ."
         "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
         "div-cuatro div-cuatro div-tres div-tres div-tres div-tres"
         
@@ -49,6 +49,12 @@ header{
             margin-top: 15px;
             h3{
                 background-color: $bg-principal;
+                font-family: $typo-secundario;
+                font-size: 40px;
+            }
+            p{
+                font-family: $typo-principal;
+                font-size: 30px;
             }
         }
         .div-dos{
@@ -63,18 +69,19 @@ header{
         .div-tres{
             grid-area: div-tres;
             background-color: $bg-principal;
-            .foti{
-                border-radius: 50%;
-            }
+            
         }
         .div-cuatro{
             grid-area: div-cuatro;
             background-color: $bg-principal;
             h3{
-                font-family: $typo-principal;
+                background-color: $bg-principal;
+                font-family: $typo-secundario;
+                font-size: 40px;
             }
             p{
-                font-family: $typo-secundario;
+                font-family: $typo-principal;
+                font-size: 30px;
             }
         }
 }

@@ -1,5 +1,7 @@
 main{
     background-color: $bg-principal;
+    margin-top: 10px;
+    margin-bottom: 10px;
     .sec-uno{
 @include codigo-main (flex-start,flex-start,center,15px,repeat(1, 1fr),repeat(4, 1fr));
 grid-template-areas: 
@@ -21,7 +23,9 @@ grid-template-areas:
             margin-bottom: 12px;
             .fotito{
                 border-radius: 50%;
-                
+                max-width: 500px;
+                display: block;
+                margin: 0 auto;
             }
         }
         .div-tres{
@@ -29,7 +33,7 @@ grid-template-areas:
             background-color: $bg-principal;
             
             .foti{
-                border-radius: 50%;
+                border-bottom-left-radius: 50%;
             }
         }
         .div-cuatro{

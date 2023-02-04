@@ -2,9 +2,9 @@
     .novedades{
         @include main-tablet (repeat(3, 1fr),repeat(3, 1fr));
         grid-template-areas: 
-        "tit-nov text-novu text-novu"
+        "tit-nov tit-nov text-novd"
         "foto-novu foto-novu foto-novu"
-        "text-novd text-novd text-novd" 
+        "text-novu text-novu text-novu" 
         ;
 
     .tit-nov{
@@ -31,6 +31,8 @@
     }
     .text-novd{
         grid-area: text-novd;
+        text-align: center;
+        align-self: flex-end;
         // @extend .text-novu;
     }
 }

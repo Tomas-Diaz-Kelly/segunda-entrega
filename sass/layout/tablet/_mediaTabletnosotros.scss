@@ -1,10 +1,10 @@
 @media (min-width:768px) and (max-width:1023px){
     .nosotros{
-        @include main-tablet (repeat(3, 1fr),repeat(3, 1fr));
+        @include main-tablet (repeat(3, 1fr),repeat(2, 1fr));
             grid-template-areas:
             "tit-nos tit-nos foto-uno"
             "tit-text text-uno text-uno"
-            "fotos-guno fotos-guno fotos-guno"
+            
             ;    
         
         .tit-nos{
@@ -22,16 +22,16 @@
         }
         .tit-text{
             grid-area: tit-text;
+            text-align: center;
+            align-self: flex-start;
+            margin-top: 75px;
             background-color: $bg-principal;
         }
         .text-uno{
             grid-area: text-uno;
             background-color: $bg-principal;
         }
-        .fotos-guno{
-            grid-area: fotos-guno;
-            background-color: $bg-principal;
-        }
+        
     }
 }
 

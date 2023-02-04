@@ -2,10 +2,12 @@
 
     
         .galery{
-        @include main-tablet (repeat(3, 1fr), repeat(3, 1fr));
+        @include main-tablet (repeat(3, 1fr), repeat(5, 1fr));
         grid-template-areas: 
-        "tit tit tit-guno"
-        "guno text-guno text-guno"
+        "tit . ."
+        "tit-guno tit-guno tit-guno"
+        "guno guno guno"
+        "text-guno text-guno text-guno"
         "gdos gdos gdos"
         ;
         .tit-parr{

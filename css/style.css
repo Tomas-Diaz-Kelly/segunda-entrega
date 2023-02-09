@@ -64,8 +64,12 @@ footer {
   footer .info-contacto {
     margin-top: 10px;
     margin-bottom: 10px; }
-    footer .info-contacto p {
+    footer .info-contacto .if {
       font-family: "Playfair Display", serif; }
+      footer .info-contacto .if li {
+        list-style-type: none; }
+        footer .info-contacto .if li a {
+          text-decoration: none; }
   footer .image {
     background-color: burlywood; }
     footer .image .imagee {
